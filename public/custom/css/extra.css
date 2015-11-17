@@ -210,7 +210,7 @@ a#button-payment.btn-primary {
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li.active>a  {
 	border-radius: 0;
-	color: #A8CF45;
+	color: #ED2F59;
 }
 span.caret {
 	color: #FFF;
@@ -912,7 +912,7 @@ footer {
 	color: #87919F;
 	font-size: 13px;
 	overflow: hidden;
-	margin-top: 100px;
+	margin-top: 30px;
 }
 
 footer .footer-bar .copyright {
@@ -1544,8 +1544,8 @@ ICONS START
     font-weight: bold;
     font-size: 1.4em;
     position: absolute;
-    top: 55%;
-    right: 44%;
+    top: 71%;
+    right: 29%;
     border-radius: 13px;
     border: 2px solid;
 }
@@ -1585,8 +1585,8 @@ a:hover.entrenador-vaginal-button {
     font-weight: bold;
     font-size: 1.4em;
     position: absolute;
-    top: 71%;
-    right: 24%;
+    top: 54%;
+    right: 25%;
     border-radius: 13px;
     border: 2px solid black;
 }

@@ -809,7 +809,7 @@ class Product extends MY_Controller {
         $category_id = NULL;
         $products_by_category_id = NULL;
 
-        $notifications = $this->session->flashdata('notifications');
+        //$notifications = $this->session->flashdata('notifications');
 
         $aux_data = $this->session->flashdata('data');
 
@@ -823,14 +823,15 @@ class Product extends MY_Controller {
             $active_ingredients = $this->get_active_ingredients();
             $data['active_ingredients'] = $active_ingredients;
 
-
+/*
             if ($data['user_logged'])
                 $notifications['info'] = "Como has iniciado sesión puedes disfrutar de este, uno de nuestros servicios especialmente creados para tí";
             else
                 $notifications['danger'] = "Para poder solicitar productos debes estar registrádo y haber iniciado sesión, hazlo dando click <a href='/account'>aquí</a>";
+*/
 
             //$this->session->set_flashdata('notifications', $notifications );
-            $data['notifications'] = $notifications;
+            $data['notifications'] = ( isset($notifications) ) ? $notifications : NULL;
 
             $data['string_to_search'] =
 

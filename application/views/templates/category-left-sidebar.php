@@ -9,6 +9,7 @@
 
 	<!-- List group -->
 	<ul class="list-group" id="left-sidebar-categories-list">
+        <?php if( isset($categories) ): ?>
 		<?php foreach( $categories as $category ): ?>
 			<li class="list-group-item no-padding">
 				<a href=<?= "/product/show_products_by_category/" . lcfirst(str_replace(' ', '_', $category->name))?> >
@@ -16,5 +17,6 @@
 				</a>
 			</li>
 		<?php endforeach; ?>
+        <?php endif;?>
 	</ul>
 </div>	

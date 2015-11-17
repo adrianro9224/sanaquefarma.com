@@ -48,7 +48,7 @@ Class Products {
 
             $num_of_poducts = count($sortedProducts);
 
-            unset($sortedProducts[$num_of_poducts - 1]);
+            //unset($sortedProducts[$num_of_poducts - 1]);
         }
 
         return $sortedProducts;
