@@ -21,10 +21,8 @@
 	                <div class="clearfix">
 	                	<div class="product-price pull-left">
 	                		<?php if( $product->has_discount ): ?>
-	                	    	<span class="old-price" ng-bind="<?= $product->old_price ?> | currency : '$' : 0"></span>
 	                	    	<span class="new-price" ng-bind="<?= $product->new_price ?> | currency : '$' : 0"></span>
 	                	    <?php else: ?>
-                                <span class="old-price" ng-bind="<?= $product->joker ?> | currency : '$' : 0"></span>
 	                	    	<span class="new-price" ng-bind="<?= $product->price ?> | currency : '$' : 0"></span>
 	                	    <?php endif; ?>
 						</div>

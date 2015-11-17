@@ -368,7 +368,7 @@ a , .emphasis, span {
 }
 
 #product_listing .product-product .product-body h3 {
-    color: #05A8AA;
+    color: #EC268F;
 }
 
 .btn-default {
@@ -547,7 +547,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .btn-danger {
-	background-color: #C0392B;
+	background-color: #EC268F;
 }
 
 button.btn-danger:hover, button.btn-danger:focus {
@@ -555,8 +555,8 @@ button.btn-danger:hover, button.btn-danger:focus {
 }
 
 .btn-danger:hover, .btn-danger:focus, .btn-danger.active {
-	background-color: #A3271A;
-	border-color: #A3271A;
+	background-color: #EC268F;
+	border: 2px solid #A8CF45 !important;
 } 
 
 #product_list #product_listing .btn, form .btn {
@@ -739,8 +739,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary[disabled].active, 
 fieldset[disabled] .btn-primary.active {
 	
-	background-color: #05A8AA;
-	border-color: rgba(0,0,0,0.125);
+	background-color: #EC268F;
+	border: 2px solid #A8CF45;
 }
 
 #sign-up-form .form-group div.checkbox {
@@ -895,7 +895,7 @@ fieldset[disabled] .btn-primary.active {
 .product-product .product-price .new-price {
 	font-weight: bold;
 	font-size: 24px;
-	color: #C0392B;
+	color: #EC268F;
 	margin-left: 5px;
 }
 

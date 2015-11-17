@@ -16,12 +16,13 @@ class Accounts {
 	
 	public function generate_pathologies_dropdown_items_ids( $categories_pathologies ) {
 		$ids = array();
-		
-		foreach ( $categories_pathologies as $pathology ) {
-			$ids[lcfirst(str_replace(' ', '_', $pathology->name))] = $pathology;
-		}
-		
-		return $ids;
+		if( isset($categories_pathologies) ) {
+            foreach ( $categories_pathologies as $pathology ) {
+                $ids[lcfirst(str_replace(' ', '_', $pathology->name))] = $pathology;
+            }
+
+            return $ids;
+        }
 	}
 
     public function save_points ( $number_of_points, $account_id ) {

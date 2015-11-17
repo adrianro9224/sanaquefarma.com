@@ -64,7 +64,7 @@
                 La Compañía no otorga garantías con respecto a los Medicamentos, incluyendo pero sin limitarse a garantías de comerciabilidad o idoneidad para un fin particular. De la información que suministre la Compañía a través de su Sitio Web no podrá colegirse la existencia de ningún tipo de garantía.
                 </p>
                 <p>
-                Las transacciones que se efectúen a través del sitio web www.virtualfarma.com.co (en adelante, el “Sitio Web”) se sujetan a los presentes términos y condiciones (en adelante, los “Términos y Condiciones del Sitio Web”).
+                Las transacciones que se efectúen a través del sitio web www.sanaquefarma.com (en adelante, el “Sitio Web”) se sujetan a los presentes términos y condiciones (en adelante, los “Términos y Condiciones del Sitio Web”).
                 </p>
                 <p>
                 Se entiende que las personas que visiten o efectúen transacciones a través del Sitio Web (en adelante, los “Usuarios” y/o los “Clientes”) han aceptado y están sujetos a los Términos y Condiciones del Sitio Web.
@@ -97,7 +97,7 @@
                 Los Usuarios autorizan expresamente a la Compañía para enviarles promociones al correo electrónico registrado en el Sitio Web conforme a las características de cada Usuario según las compras y enlaces visitados.
                 </p>
                 <p>
-                El Usuario podrá solicitar la suspensión de toda comunicación promocional o publicitaria enviada a su correo electrónico enviando un correo en este sentido a contacto@virtualfarma.com.co
+                El Usuario podrá solicitar la suspensión de toda comunicación promocional o publicitaria enviada a su correo electrónico enviando un correo en este sentido a contacto@sanaquefarma.com
                 </p>
             </article>
             <h4>Formación del Consentimiento de Compra</h4>
