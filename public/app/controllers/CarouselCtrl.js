@@ -15,8 +15,8 @@ farmapp.controller('CarouselCtrl', ['$scope', function($scope) {
                 format = '.png';*/
         slides.push({
             image: 'http://sanaquefarma.com/assets/images/slides/' + i + format,
-            button: ['http://sanaquefarma.com/product/search_product/entrenador','http://sanaquefarma.com/product/search_product/argel','http://sanaquefarma.com/product/search_product/promelight'][slides.length % 3],
-            class : ['entrenador-vaginal-button', 'argel-button', 'promelight-button'][slides.length % 3]
+            button: ['http://sanaquefarma.com/product/show_product_by_id/2','http://sanaquefarma.com/product/show_product_by_id/5','http://sanaquefarma.com/product/show_product_by_id/7'][slides.length % 3],
+            class : ['dynoral-button', 'argel-button', 'promelight-button'][slides.length % 3]
         });
     };
     for (var i=0; i<=2; i++) {

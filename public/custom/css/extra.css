@@ -186,8 +186,7 @@ a#button-payment.btn-primary {
 }
 
 #search-nav {
-   /*background-color: #05A8AA;*/
-    min-height: 64px;
+   background-color: #EC268F;
 }
 
 #vf-button {
@@ -196,7 +195,7 @@ a#button-payment.btn-primary {
 }
 
 #search-container {
-    padding: 15px 0;
+    padding: 5px 0;
 }
 
 #search-container #search-module>span.form-control-feedback {
@@ -211,16 +210,24 @@ a#button-payment.btn-primary {
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li.active>a  {
 	border-radius: 0;
-	color: #FFF;
+	color: #A8CF45;
 }
 span.caret {
 	color: #FFF;
 }
 
 .nav>li>a:hover, .nav>li>div>a:hover, .nav>li>a:active, .nav>li>div>a:active, .nav .open>a:focus, .nav div>.open>a:active {
-	color:#A8CF45 !important;
+	/*color:#A8CF45 !important;*/
 	text-decoration:none;
 	background-color: #FFF !important;
+    border-top: none;
+    border-left: 2px solid #ED2F59;
+    border-bottom: 2px solid #ED2F59;
+    border-right: 2px solid #ED2F59;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #ED2F59;
 }
 
 #left_sidebar li.list-group-item a:hover {
@@ -244,7 +251,7 @@ span.caret {
 	box-shadow: 0 1px 14px #888888;
 }
 .container-fluid .row #primary-nav-container {
-	background-color: #EC268F;
+	/*background-color: #EC268F;*/
 }
 .container-fluid #nav.row{
 	/*padding-top: 5px;*/
@@ -1549,7 +1556,7 @@ a:hover.argel-button {
     text-decoration: none;
 }
 
-.entrenador-vaginal-button {
+.dynoral-button {
     background-color: #FFF;
     padding: 2px 53px;
     text-decoration: none;
@@ -1557,8 +1564,8 @@ a:hover.argel-button {
     font-weight: bold;
     font-size: 1.4em;
     position: absolute;
-    top: 67%;
-    left: 20.5%;
+    top: 70%;
+    left: 70%;
     border-radius: 13px;
     border: 2px solid;
 }

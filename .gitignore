@@ -1,2 +1,4 @@
 assets/
 .idea/
+application/logs/
+application/config/database.php
