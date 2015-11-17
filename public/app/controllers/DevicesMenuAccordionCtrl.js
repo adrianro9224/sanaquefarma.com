@@ -149,7 +149,7 @@ farmapp.controller('DevicesMenuAccordionCtrl', ['$scope', '$rootScope', '$http',
     function load_products( searchInfo ) {
         var json;
         $scope.productsCharged = false;
-        $http.get("http://virtualfarma.com.co/product/all_products_for_search_input")
+        $http.get("http://sanaquefarma.com/product/all_products_for_search_input")
             .success(function (data, status, headers, config) {
 
                 //  console.info(data + ":(");

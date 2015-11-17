@@ -1,4 +1,5 @@
 <?php
+
 //site general views files
 define("__ROOT__TEMPLATES__", dirname(dirname(__FILE__)) . "/views/templates/");
 define("__ROOT__FILES__", dirname(dirname(dirname(__FILE__))) . "/assets/files_unsecured/");
@@ -23,7 +24,7 @@ class MY_Controller extends CI_Controller {
 	{
 		parent::__construct();
  		$this->load->model('account_model');
- 		$this->load->library(array('categories'));
+ 		// $this->load->library(array('categories'));
 	}
 	
 	
@@ -36,15 +37,15 @@ class MY_Controller extends CI_Controller {
 	}
 	
 	public function get_categories() {
-		$categories = $this->category_model->all_categories();
+		// $categories = $this->category_model->all_categories();
 		
-		return $categories;
+		// return $categories;
 	}
 
     public function get_active_ingredients() {
-        $active_ingredients = $this->active_ingredient_model->get_all();
+        // $active_ingredients = $this->active_ingredient_model->get_all();
 
-        return $active_ingredients;
+        // return $active_ingredients;
     }
 	
 	

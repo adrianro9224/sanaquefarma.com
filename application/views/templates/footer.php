@@ -1,20 +1,13 @@
 <footer>
-	<!-- copyright , scrollTo Top -->
-	<div class="footer-bar">
-		<div class="container">
-			<span class="copyright">Copyright © virtualfarma.com.co .Todos los derechos reservados.</span>
-			<a class="toTop" href="#header-top">Volver a arriba <i class="glyphicon glyphicon-circle-arrow-up"></i></a>
-		</div>
-	</div>
-	<!-- copyright , scrollTo Top -->
-
-
 	<!-- footer content -->
 	<div class="footer-content">
 		<div class="container">
 			<div class="row">
 				<!-- FOOTER CONTACT INFO -->
-				<div class="col-md-6 col-md-offset-4">
+				<div class="col-md-6">
+					<span class="copyright">Copyright © sanaquefarma.com .Todos los derechos reservados.</span>
+				</div>
+				<div class="col-md-6">
 					<ul class="brands brands-circle brands-inline">
 						<li><a href="https://www.facebook.com/VirtualFarma" class="brands-facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="https://twitter.com/VirtualFarma" class="brands-twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>

@@ -14,12 +14,12 @@ farmapp.controller('CarouselCtrl', ['$scope', function($scope) {
            /* if( i == 0 )
                 format = '.png';*/
         slides.push({
-            image: 'http://virtualfarma.com.co/assets/images/slides/' + i + format,
-            button: ['', 'http://virtualfarma.com.co/product/search_product/entrenador','http://virtualfarma.com.co/product/search_product/argel','http://virtualfarma.com.co/product/search_product/promelight'][slides.length % 4],
-            class : ['hidden', 'entrenador-vaginal-button', 'argel-button', 'promelight-button'][slides.length % 4]
+            image: 'http://sanaquefarma.com/assets/images/slides/' + i + format,
+            button: ['http://sanaquefarma.com/product/search_product/entrenador','http://sanaquefarma.com/product/search_product/argel','http://sanaquefarma.com/product/search_product/promelight'][slides.length % 3],
+            class : ['entrenador-vaginal-button', 'argel-button', 'promelight-button'][slides.length % 3]
         });
     };
-    for (var i=0; i<=3; i++) {
+    for (var i=0; i<=2; i++) {
 
         //if ( i != 2 )
             $scope.addSlide(i);

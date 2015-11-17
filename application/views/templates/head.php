@@ -10,7 +10,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="Cache-Control" content="max-age=2592000, public" />
-    <meta name="description" content="Virtual Farma, todo a un clic, es la mejor droguería virtual, que te corre porque el tiempo es oro y donde encuentras todo sin salir de casa">
+    <meta name="description" content="Sana Farma">
     <meta name="keywords" content="Droguerías virtuales, farmacias virtuales, Droguería Virtual, Farmacia Virtual,  droguería en línea, farmacia en línea, droguería online, farmacia online, domicilios, medicamentos, medicamentos a domicilio, medicamentos baratos, inyectología">
 
 	<!-- Bootstrap css start -->
@@ -57,7 +57,8 @@
 	
 	<!-- Angular js controllers start -->
 	<script type="text/javascript" src="<?= base_url() . 'public/app/controllers/CarouselCtrl.js'?>"></script>
-	<script type="text/javascript" src="<?= base_url() . 'public/app/controllers/DevicesMenuAccordionCtrl.min.js'?>"></script>
+	<!--<script type="text/javascript" src="<?//= base_url() . 'public/app/controllers/DevicesMenuAccordionCtrl.min.js'?>"></script>-->
+	<script type="text/javascript" src="<?= base_url() . 'public/app/controllers/DevicesMenuAccordionCtrl.js'?>"></script>
 	<script type="text/javascript" src="<?= base_url() . 'public/app/controllers/NotificationsCtrl.min.js'?>"></script>
 	<script type="text/javascript" src="<?= base_url() . 'public/app/controllers/AccountPanelCtrl.js'?>"></script>
 	<script type="text/javascript" src="<?= base_url() . 'public/app/controllers/AccordionCtrl.min.js'?>"></script>
