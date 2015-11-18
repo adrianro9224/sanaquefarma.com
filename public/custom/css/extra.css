@@ -210,7 +210,7 @@ a#button-payment.btn-primary {
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li.active>a  {
 	border-radius: 0;
-	color: #ED2F59;
+	color: #EC268F;
 }
 span.caret {
 	color: #FFF;
@@ -221,13 +221,13 @@ span.caret {
 	text-decoration:none;
 	background-color: #FFF !important;
     border-top: none;
-    border-left: 2px solid #ED2F59;
-    border-bottom: 2px solid #ED2F59;
-    border-right: 2px solid #ED2F59;
+    border-left: 2px solid #EC268F;
+    border-bottom: 2px solid #EC268F;
+    border-right: 2px solid #EC268F;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-    color: #ED2F59;
+    color: #EC268F;
 }
 
 #left_sidebar li.list-group-item a:hover {
@@ -1738,4 +1738,7 @@ a:hover.pathology-btn {
 
 #main-products #content {
 	padding-top: 30px;
+}
+#header-top .header-item-container .header-item:first-child>i, #header-top .header-item-container .header-item:first-child>span {
+	color: #EC268F !important;
 }
