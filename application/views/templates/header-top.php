@@ -1,4 +1,4 @@
-<div class="">
+<div id="header-top-container">
 	<div class="row" ng-controller="ShoppingCartAxuCtrl">
         <div class="visible-xs-12 hidden-lg hidden-md">
             <img class="center-horizontaly" id="normal-logo" src="<?= base_url() . 'assets/images/logo/sanaquefarma_final.png'?>" class="img-responsive" alt="sanaquefarma.com">

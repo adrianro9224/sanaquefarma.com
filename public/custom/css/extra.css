@@ -1777,3 +1777,6 @@ a:hover.pathology-btn {
     background-color: #FFF;
     border-radius: 21px 21px 0 0;
 }
+#header-top-container {
+	padding-top: 26px;
+}
