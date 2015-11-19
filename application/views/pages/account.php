@@ -36,7 +36,7 @@
                     <div class="col-md-6 col-md-offset-1" ng-controller="RegisterForm">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3>Nuevo usuario</h3>
+                                <h3>Nuevo usuarioCliente</h3>
                             </div>
                             <div class="panel-body">
                                 <p>Para registrarte por favor completa el siguiente formulario:</p>
@@ -183,7 +183,7 @@
                     <div class="col-md-6 col-md-offset-1" ng-controller="LogInForm">
                         <div class="panel panel-default" ng-controller="FacebookCtrl">
                             <div class="panel-heading">
-                                <h3>Usuario registrado</h3>
+                                <h3>Cliente registrado</h3>
                             </div>
                             <div class="panel-body">
                                 <p>Ya estas registrado ?, ingresa con tu cuenta de sanaquefarma:</p>

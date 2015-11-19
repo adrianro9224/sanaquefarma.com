@@ -39,6 +39,9 @@ a#button-payment.btn-primary {
     min-height: 139px;
 
 }
+#header-top {
+	background-color: #EC268F;
+}
 
 /*
 * header top styles over
@@ -54,7 +57,7 @@ a#button-payment.btn-primary {
 
 #search-module>input {	
 	border-radius: 5px;
-	border: 1px solid #A8CF45;
+	border: 1px solid #EC268F;
 }
 
 #primary-nav #categories-scroll {
@@ -72,7 +75,7 @@ a#button-payment.btn-primary {
 }
 
 #header-nav {
-	margin-top: 10px;
+	margin-top: 7px;
 }
 
 .handy {
@@ -186,7 +189,7 @@ a#button-payment.btn-primary {
 }
 
 #search-nav {
-   background-color: #EC268F;
+   background-color: #A8CF45;
 }
 
 #vf-button {
@@ -206,6 +209,22 @@ a#button-payment.btn-primary {
 
 #search-container #search-module>input.form-control {
     font-size: 17px;
+    color: #EC268F;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #EC268F;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #EC268F;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #EC268F;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #EC268F;
 }
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li.active>a  {
@@ -872,18 +891,21 @@ fieldset[disabled] .btn-primary.active {
 }
 
 #product_list .product-product .product-price,#home_product_list .product-product .product-price  {
-	background-color: #F9F9F9;
-	border: 2px dashed #E0E0E0;
+	/*background-color: #F9F9F9;
+	border: 2px dashed #E0E0E0;*/
 	padding: 5px 12px;
 }
 
-#home_product_list .product-product .product-price {
+#home_product_list .product-product .product-price, #home_product_list .product-product .caption-custom>h3, #home_product_list .product-product .caption-custom>p {
     text-align: center;
 }
 
 #home_product_list .product-product a{
     width: 100%;
     margin-top: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
 }
 
 .product-product .product-price .old-price {
@@ -1600,6 +1622,8 @@ a:hover.promelight-button {
 
 .thumbnail {
     min-height: 380px;
+    background-color: #A8CF45;
+    border-radius: 25px;
 }
 
 #WA-info i {
@@ -1728,17 +1752,28 @@ a:hover.pathology-btn {
 
 #search-container>form>button {
 	/*width: 100%;*/
-	background-color: #A8CF45;
+	background-color: #EC268F;
 	color: #FFF;
 	border-radius: 5px;
+	
+	padding: 5px 12px;
+    font-size: 16px;
 }
 #main-products{
-	background-color: #A8CF45;
+	/*background-color: #A8CF45;*/
 }
 
 #main-products #content {
 	padding-top: 30px;
 }
 #header-top .header-item-container .header-item:first-child>i, #header-top .header-item-container .header-item:first-child>span {
-	color: #EC268F !important;
+	color: #FFF;
+}
+.thumbnail .caption>img, .thumbnail a>img {
+    margin-right: auto;
+    margin-left: auto;
+}
+.thumbnail .caption-custom {
+    background-color: #FFF;
+    border-radius: 21px 21px 0 0;
 }

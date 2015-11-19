@@ -49,34 +49,8 @@
 		</table>
 	</div>
 	<?php else:?>
-		<p class="bg-warning">No has realizado compras :(</p>			
+		<p class="bg-warning">Sin compras</p>			
 	<?php endif;?>
 </div>
     
-<div class="row">
-    <div class="col-md-6">
-	    <div class="panel panel-info">
-            <div class="panel-heading"><i class="fa fa-gift"></i> Puntos acumulados</div>
-            <div class="panel-body">
-                <?php if (  isset($points) ):?>
-                    <span>Ya cuentas con <strong><?= $points . " puntos"?></strong>, podrás redimirlos cuando quieras!!</span>
-                <?php else:?>
-                    <span>Aún no tienes puntos <i class="fa fa-frown-o"></i>. Por cada $1000 pesos en compras acumulas 10 puntos, que podrás redimir en en productos de virtualfarma :D <i class="fa fa-gift"></i> </span>
-                <?php endif;?>
-            </div>
-        </div>
-     </div>
 
-    <div class="col-md-6">
-	    <div class="panel panel-warning">
-            <div class="panel-heading">Nuestros horarios</div>
-            <div class="panel-body">
-                <article>
-                    <p>
-                        <strong>Horario de atención:</strong> Lunes a Viernes 8am a 8pm / Sábados de 8am a 8pm y Domingos y Festivos pedidos solo a traves de la página web de 9am a 6pm‏
-                    </p>
-                </article>
-            </div>
-        </div>
-    </div>
-</div>

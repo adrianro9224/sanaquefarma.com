@@ -44,9 +44,9 @@ class Mandrill_lib {
             $message = array(
                 //'html' => '<p>Example HTML content</p>',
                 //'text' => 'Example text content',
-                'subject' => 'Gracias por registrarte',
-                'from_email' => 'registro@virtualfarma.com.co',
-                'from_name' => 'Equipo Virtualfarma.com.co',
+                'subject' => 'Bienvenido a Sanaquefarma',
+                'from_email' => 'registro@sanaquefarma.com',
+                'from_name' => 'Grupo sanaquefarma..com',
                 'to' => array(
                     array(
                         'email' => $account->email,
@@ -86,7 +86,7 @@ class Mandrill_lib {
                             ),
                             array(
                                 'name' => 'COMPANY',
-                                'content' => "virtuafarma.com.co"
+                                'content' => "sanaquefarma.com"
                             )
                         )
                     )
@@ -177,9 +177,9 @@ class Mandrill_lib {
             $message = array(
                 //'html' => '<p>Example HTML content</p>',
                 //'text' => 'Example text content',
-                'subject' => 'Gracias por comprar con Virtaualfarma',
-                'from_email' => 'contacto@virtualfarma.com.co',
-                'from_name' => 'Equipo Virtualfarma.com.co',
+                'subject' => 'Gracias por comprar con sanaquefarma',
+                'from_email' => 'contacto@sanaquefarma.com',
+                'from_name' => 'Grupo sanaquefarma.com',
                 'to' => $to,
                 //'headers' => array('Reply-To' => 'registro@virtualfarma.com.co'),
                 'important' => false,
@@ -200,7 +200,7 @@ class Mandrill_lib {
                 'global_merge_vars' => array(
                     array(
                         'name' => 'COMPANY',
-                        'content' => 'virtuafarma.com.co'
+                        'content' => 'sanaquefarma.com'
                     )
                 ),
                 'merge_vars' => array(
@@ -213,7 +213,7 @@ class Mandrill_lib {
                             ),
                             array(
                                 'name' => 'COMPANY',
-                                'content' => "virtuafarma.com.co"
+                                'content' => "sanaquefarma.com"
                             )
                         )
                     )
@@ -293,11 +293,11 @@ class Mandrill_lib {
                 //'html' => '<p>Example HTML content</p>',
                 //'text' => 'Example text content',
                 'subject' => 'Nuevo pqrs',
-                'from_email' => 'contacto@virtualfarma.com.co',
-                'from_name' => 'Equipo Virtualfarma.com.co',
+                'from_email' => 'contacto@sanaquefarma.com',
+                'from_name' => 'Grupo sanaquefarma.com',
                 'to' => array(
                     array(
-                        'email' => 'contacto@virtualfarma.com.co',//replace it for contacto@virtualfarma.com.co
+                        'email' => 'contacto@sanaquefarma..com',
                         'name' => "Contact admin",
                         'type' => 'to'
                     )
@@ -326,7 +326,7 @@ class Mandrill_lib {
                 ),
                 'merge_vars' => array(
                     array(
-                        'rcpt' => 'contacto@virtualfarma.com.co',
+                        'rcpt' => 'contacto@sanaquefarma.com',
                         'vars' => array(
                             array(
                                 'name' => 'NAME',
@@ -418,9 +418,9 @@ class Mandrill_lib {
             $message = array(
                 //'html' => '<p>Example HTML content</p>',
                 //'text' => 'Example text content',
-                'subject' => 'Orden recibida',
-                'from_email' => 'contacto@virtualfarma.com.co',
-                'from_name' => 'Equipo Virtualfarma.com.co',
+                'subject' => 'Hemos recibido tu pedido',
+                'from_email' => 'contacto@sanaquefarma.com',
+                'from_name' => 'Grupo sanaquefarma.com',
                 'to' => array(
                     array(
                         'email' => $to_account->email,//replace it for contacto@virtualfarma.com.co
@@ -559,9 +559,9 @@ class Mandrill_lib {
             $message = array(
                 //'html' => '<p>Example HTML content</p>',
                 //'text' => 'Example text content',
-                'subject' => 'Orden confirmada',
-                'from_email' => 'contacto@virtualfarma.com.co',
-                'from_name' => 'Equipo Virtualfarma.com.co',
+                'subject' => 'Tu pedido va en camino',
+                'from_email' => 'contacto@sanaquefarma.com',
+                'from_name' => 'Grupo sanaquefarma.com',
                 'to' => array(
                     array(
                         'email' => $to_account->email,//replace it for contacto@virtualfarma.com.co
