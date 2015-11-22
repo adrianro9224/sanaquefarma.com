@@ -10,7 +10,7 @@ farmapp.controller('CarouselCtrl', ['$scope', function($scope) {
     $scope.myInterval = 7500;
     var slides = $scope.slides = [];
     $scope.addSlide = function(i) {
-        var format = '.jpg';
+        var format = '.png';
            /* if( i == 0 )
                 format = '.png';*/
         slides.push({
