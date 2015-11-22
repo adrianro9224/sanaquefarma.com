@@ -1571,9 +1571,9 @@ ICONS START
     font-size: 1.4em;
     position: absolute;
     top: 71%;
-    right: 29%;
+    right: 27%;
     border-radius: 13px;
-    border: 2px solid;
+    border: 2px solid #FF6501;
 }
 
 a:hover.argel-button {
@@ -1586,41 +1586,41 @@ a:hover.argel-button {
     background-color: #FFF;
     padding: 2px 53px;
     text-decoration: none;
-    color: #09A7AA;
+    color: #484848;
     font-weight: bold;
     font-size: 1.4em;
     position: absolute;
-    top: 70%;
-    left: 70%;
+    top: 79%;
+    right: 19.6%;
     border-radius: 13px;
-    border: 2px solid;
+    border: 2px solid #FFF;
 }
 
-a:hover.entrenador-vaginal-button {
+a:hover.dynoral-button {
     text-decoration: none;
-    border: 2px solid #FFF;
-    background-color: #09A7AA;
-    color: #FFF;
+    border: 2px solid #484848;
+    background-color: #FFF;
+    color: #484848;
 }
 
 .promelight-button {
-    background-color: #FFF;
+    background-color: #D7FE00;
     padding: 3px 54px;
     text-decoration: none;
-    color: black;
+    color: #484848;
     font-weight: bold;
     font-size: 1.4em;
     position: absolute;
-    top: 54%;
-    right: 25%;
+    top: 50%;
+    right: 23%;
     border-radius: 13px;
-    border: 2px solid black;
+    border: 2px solid #D7FE00;
 }
 a:hover.promelight-button {
     text-decoration: none;
-    border: 2px solid #FFF;
-    background-color: black;
-    color: #FFF;
+    border: 2px solid #D7FE00;
+    background-color: #FFF;
+    color: #484848;
 
 }
 
