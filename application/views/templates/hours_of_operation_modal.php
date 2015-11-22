@@ -6,7 +6,7 @@
         <section>
             <article>
                 <p>
-                    <strong>Horario de atención:</strong> Lunes a Viernes 8am a 6pm / Sábados de 8am a 1pm
+                    <strong>Horario de atención:</strong> Lunes a Viernes 8am a 6pm / Sábados de 8am a 12pm
                 </p>
             </article>
         </section>

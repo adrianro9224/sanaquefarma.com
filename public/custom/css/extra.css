@@ -40,7 +40,7 @@ a#button-payment.btn-primary {
 
 }
 #header-top {
-	background-color: #EC268F;
+	background-color: #00AFEF;
 }
 
 /*
@@ -57,7 +57,7 @@ a#button-payment.btn-primary {
 
 #search-module>input {	
 	border-radius: 5px;
-	border: 1px solid #EC268F;
+	border: 1px solid #00AFEF;
 }
 
 #primary-nav #categories-scroll {
@@ -125,12 +125,12 @@ a#button-payment.btn-primary {
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
-	color: #ED2F59;
-	background-color: #ED2F59;
+	color: #00AFEF;
+	background-color: #00AFEF;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-	color: #ED2F59;
+	color: #00AFEF;
 	background-color: transparent;
 }
 
@@ -189,7 +189,7 @@ a#button-payment.btn-primary {
 }
 
 #search-nav {
-   background-color: #A8CF45;
+   background-color: #D7FE00;
 }
 
 #vf-button {
@@ -209,27 +209,27 @@ a#button-payment.btn-primary {
 
 #search-container #search-module>input.form-control {
     font-size: 17px;
-    color: #EC268F;
+    color: #00AFEF;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #EC268F;
+    color: #00AFEF;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: #EC268F;
+   color: #00AFEF;
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: #EC268F;
+   color: #00AFEF;
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: #EC268F;
+   color: #00AFEF;
 }
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li.active>a  {
 	border-radius: 0;
-	color: #EC268F;
+	color: #00AFEF;
 }
 span.caret {
 	color: #FFF;
@@ -240,13 +240,13 @@ span.caret {
 	text-decoration:none;
 	background-color: #FFF !important;
     border-top: none;
-    border-left: 2px solid #EC268F;
-    border-bottom: 2px solid #EC268F;
-    border-right: 2px solid #EC268F;
+    border-left: 2px solid #00AFEF;
+    border-bottom: 2px solid #00AFEF;
+    border-right: 2px solid #00AFEF;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-    color: #EC268F;
+    color: #00AFEF;
 }
 
 #left_sidebar li.list-group-item a:hover {
@@ -383,7 +383,7 @@ a , .link {
 }
 
 a , .emphasis, span {	
-	color: #EC268F;
+	color: #D7FE00;
 }
 
 #product_listing .product-product .product-body h3 {
@@ -529,7 +529,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-item i, .header-item span, .header-item h1 {
-    color: #A8CF45;
+    color: #D7FE00;
 }
 
 .header-item-container {
@@ -547,8 +547,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-	background-color: #EC268F;
-	border-color: #EC268F;
+	color: #00AFEF;
+	background-color: #D7FE00;
+	border-color: #D7FE00;
 }
 
 .btn-primary:hover,
@@ -557,9 +558,9 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary:active, 
 .btn-primary.active, 
 .open>.dropdown-toggle.btn-primary {
-	background-color: #EC268F;
-	color: #FFFFFF !important;
-	border-color: #A8CF45; 
+	background-color: #D7FE00;
+	color: #00AFEF !important;
+	border-color: #FFF; 
 	border-width: 2px;
 	
 }
@@ -669,7 +670,7 @@ section #my-account .panel.panel-default {
     /*background-color: #ED2F59;*/
 }
 .secondary-emphasis {
-	color: #EC268F;
+	color: #00AFEF;
 }
 
 
@@ -896,7 +897,10 @@ fieldset[disabled] .btn-primary.active {
 	padding: 5px 12px;
 }
 
-#home_product_list .product-product .product-price, #home_product_list .product-product .caption-custom>h3, #home_product_list .product-product .caption-custom>p {
+#home_product_list .product-product .product-price, 
+#home_product_list .product-product .caption-custom>h3, 
+#home_product_list .product-product .caption-custom>p,
+#footer>footer .row .col-md-12 {
     text-align: center;
 }
 
@@ -934,7 +938,7 @@ footer {
 	color: #87919F;
 	font-size: 13px;
 	overflow: hidden;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 footer .footer-bar .copyright {
@@ -962,8 +966,8 @@ footer .footer-bar {
 }
 
 footer .footer-content {
-	background: #A8CF45;
-	border-top: #A8CF45 1px dashed;
+	background: #00AFEF;
+	border-top: #00AFEF 1px dashed;
 	padding: 2% 0;
 	display: block;
 	min-height: 100px; 
@@ -1622,7 +1626,7 @@ a:hover.promelight-button {
 
 .thumbnail {
     min-height: 380px;
-    background-color: #A8CF45;
+    background-color: #00AFEF;
     border-radius: 25px;
 }
 
@@ -1752,7 +1756,7 @@ a:hover.pathology-btn {
 
 #search-container>form>button {
 	/*width: 100%;*/
-	background-color: #EC268F;
+	background-color: #00AFEF;
 	color: #FFF;
 	border-radius: 5px;
 	
@@ -1779,4 +1783,8 @@ a:hover.pathology-btn {
 }
 #header-top-container {
 	padding-top: 26px;
+}
+
+.container-container#home-products-container {
+	background-color: #D0E8E8;
 }

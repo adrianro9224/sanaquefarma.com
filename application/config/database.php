@@ -53,14 +53,14 @@ $active_record = TRUE;
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = 'naci1992';
-$db['default']['database'] = 'v7000552_sqfarma';*/
+$db['default']['database'] = 'v7000552_sqfarma';
 
 //job
-
+/*
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = 'ZmqcHAswFQXSCE5X';
-$db['default']['database'] = 'v7000552_sqfarma';
+$db['default']['database'] = 'v7000552_sqfarma';*/
 
 //remote
 /*
