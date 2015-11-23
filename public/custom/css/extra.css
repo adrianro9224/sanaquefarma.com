@@ -27,8 +27,8 @@ div , body, html{
 
 /* Buttons */
 a#button-payment.btn-primary {
-	background-color: #ED2F59;
-	border-color: #ED2F59;
+	background-color: #00AFEF;
+	border-color: #D7FE00;
 }
 #header-top .primary-background{
 	/*background-color: #ED2F59;
@@ -387,7 +387,7 @@ a , .emphasis, span {
 }
 
 #product_listing .product-product .product-body h3 {
-    color: #EC268F;
+    color: #00AFEF;
 }
 
 .btn-default {
@@ -460,13 +460,13 @@ input.form-control {
 }
 
 .panel.panel-default>.panel-heading {
-	background-color: #A8CF45;
+	background-color: #00AFEF;
 	border-color: rgba(0,0,0,0.1);
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 }
 #checkout-panel-content #payment-method-accordion .panel.panel-default>.panel-heading {
-	background-color: #A8CF45;
+	background-color: #00AFEF;
 	border-color: rgba(0,0,0,0.1);
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
@@ -547,8 +547,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-	color: #00AFEF;
-	background-color: #D7FE00;
+	color: #FFF;
+	background-color: #00AFEF;
 	border-color: #D7FE00;
 }
 
@@ -558,16 +558,16 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary:active, 
 .btn-primary.active, 
 .open>.dropdown-toggle.btn-primary {
-	background-color: #D7FE00;
-	color: #00AFEF !important;
-	border-color: #FFF; 
+	background-color: #00AFEF;
+	color: #FFF !important;
+	border-color: #D7FE00; 
 	border-width: 2px;
 	
 }
 
 
 .btn-danger {
-	background-color: #EC268F;
+	background-color: #00AFEF;
 }
 
 button.btn-danger:hover, button.btn-danger:focus {
@@ -575,8 +575,8 @@ button.btn-danger:hover, button.btn-danger:focus {
 }
 
 .btn-danger:hover, .btn-danger:focus, .btn-danger.active {
-	background-color: #EC268F;
-	border: 2px solid #A8CF45 !important;
+	background-color: #00AFEF;
+	border: 2px solid #D7FE00 !important;
 } 
 
 #product_list #product_listing .btn, form .btn {
@@ -759,8 +759,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary[disabled].active, 
 fieldset[disabled] .btn-primary.active {
 	
-	background-color: #EC268F;
-	border: 2px solid #A8CF45;
+	background-color: #00AFEF;
+	border: 2px solid #D7FE00;
 }
 
 #sign-up-form .form-group div.checkbox {
@@ -921,7 +921,7 @@ fieldset[disabled] .btn-primary.active {
 .product-product .product-price .new-price {
 	font-weight: bold;
 	font-size: 24px;
-	color: #EC268F;
+	color: #00AFEF;
 	margin-left: 5px;
 }
 
