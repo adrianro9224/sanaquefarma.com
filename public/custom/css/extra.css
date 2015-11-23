@@ -910,6 +910,13 @@ fieldset[disabled] .btn-primary.active {
     font-weight: bold;
     font-size: 16px;
     border-radius: 10px;
+    background-color: #D7FE00;
+    color: #00AFEF;
+}
+
+#home_product_list .product-product a:hover {
+	border: 2px solid #FFF;	
+	color: #00AFEF;	
 }
 
 .product-product .product-price .old-price {
