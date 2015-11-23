@@ -34,7 +34,7 @@ class Mandrill_lib {
 
             // template name ->string, $message->array
 
-            $template_name = 'finalRegister';
+            $template_name = 'finalRegisterSQF';
             $template_content = array(
                 array(
                     'name' => 'example name',
@@ -46,7 +46,7 @@ class Mandrill_lib {
                 //'text' => 'Example text content',
                 'subject' => 'Bienvenido a Sanaquefarma',
                 'from_email' => 'registro@sanaquefarma.com',
-                'from_name' => 'Grupo sanaquefarma..com',
+                'from_name' => 'Grupo sanaquefarma.com',
                 'to' => array(
                     array(
                         'email' => $account->email,
@@ -297,7 +297,7 @@ class Mandrill_lib {
                 'from_name' => 'Grupo sanaquefarma.com',
                 'to' => array(
                     array(
-                        'email' => 'contacto@sanaquefarma..com',
+                        'email' => 'contacto@sanaquefarma.com',
                         'name' => "Contact admin",
                         'type' => 'to'
                     )
@@ -408,7 +408,7 @@ class Mandrill_lib {
 
             $CI->load->library('mandrill');
 
-            $template_name = 'orderSended';
+            $template_name = 'orderSendedSQF';
             $template_content = array(
                 array(
                     'name' => 'example name',
@@ -549,7 +549,7 @@ class Mandrill_lib {
 
             $CI->load->library('mandrill');
 
-            $template_name = 'orderConfirmed';
+            $template_name = 'orderConfirmedSQF';
             $template_content = array(
                 array(
                     'name' => 'example name',
