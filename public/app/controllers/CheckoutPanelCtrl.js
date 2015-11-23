@@ -126,7 +126,7 @@ farmapp.controller('CheckoutPanelCtrl', ['$scope', '$rootScope', '$log', '$cooki
 
                 order.points = order.shoppingcart.subtotal * ConstantsService.POINTS_BASE;
 
-                $http.post("http://virtualfarma.com.co/checkout/create_order" , { data : order} )
+                $http.post("http://sanaquefarma.com/checkout/create_order" , { data : order} )
                     .success(function(data, status, headers, config) {
 
                         if ( data == "true" ) {
@@ -424,7 +424,7 @@ farmapp.controller('CheckoutPanelCtrl', ['$scope', '$rootScope', '$log', '$cooki
 
         $scope.loadingAddresses = true;
 
-        $http.get("http://virtualfarma.com.co/address/get_all")
+        $http.get("http://sanaquefarma.com/address/get_all")
             .success(function (data, status, headers, config) {
 
                 $scope.loadingAddresses = false;

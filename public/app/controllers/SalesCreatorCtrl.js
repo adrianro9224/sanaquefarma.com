@@ -63,12 +63,12 @@ farmapp.controller('SalesCreatorCtrl', ['$scope', '$rootScope', '$http', '$filte
     function load_products() {
         var json;
         $scope.productsCharged = false;
-        $http.get("http://virtualfarma.com.co/admin/all_products")
+        $http.get("http://sanaquefarma.com/admin/all_products")
             .success(function (data, status, headers, config) {
 
                 //  console.info(data + ":(");
 
-                if ( json != 'NULL' ){
+                if ( data != 'NULL' ){
                     var json = angular.fromJson(data);
                     $scope.productsCharged= true;
                     $scope.products = json;
@@ -188,7 +188,7 @@ farmapp.controller('SalesCreatorCtrl', ['$scope', '$rootScope', '$http', '$filte
 
                 order.points = order.shoppingcart.subtotal * ConstantsService.POINTS_BASE;
 
-                $http.post("http://virtualfarma.com.co/checkout/create_order" , { data : order} )
+                $http.post("http://sanaquefarma.com/checkout/create_order" , { data : order} )
                     .success(function(data, status, headers, config) {
 
                         if ( data == "true" ) {

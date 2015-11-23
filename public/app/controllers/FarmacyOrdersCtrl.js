@@ -55,7 +55,7 @@ farmapp.controller( 'FarmacyOrdersCtrl', ['$scope', '$http', '$window', 'UtilSer
         orderInfo.date = UtilService.getDateMySql();
         $scope.UpdatingOrderToSended = true;
 
-        $http.post("http://virtualfarma.com.co/admin/change_order_status" , { data : orderInfo } )
+        $http.post("http://sanaquefarma.com/admin/change_order_status" , { data : orderInfo } )
             .success(function(data, status, headers, config) {
                 console.info(data);
 
@@ -85,7 +85,7 @@ farmapp.controller( 'FarmacyOrdersCtrl', ['$scope', '$http', '$window', 'UtilSer
         orderInfo.date = UtilService.getDateMySql();
         $scope.UpdatingOrderToSended = true;
 
-        $http.post("http://virtualfarma.com.co/admin/change_order_status" , { data : orderInfo } )
+        $http.post("http://sanaquefarma.com/admin/change_order_status" , { data : orderInfo } )
             .success(function(data, status, headers, config) {
                 console.info(data);
 
