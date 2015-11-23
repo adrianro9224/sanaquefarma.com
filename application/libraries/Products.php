@@ -9,9 +9,9 @@ Class Products {
         $CI =& get_instance();
 		$CI->load->model('product_model');
 
-        $products = $CI->product_model->get_by_category_id( 1 );
+		$first_products_ids = array( '2', '5', '56345', '43289', '7', '9', '6', '1', '3');
 
-        $first_products_ids = array('5', '7', '43289');
+        $products = $CI->product_model->get_by_product_ids( $first_products_ids );
 
         $first_products = array();
 
@@ -20,38 +20,41 @@ Class Products {
             foreach( $products as $key=>$product ) {
 
                 if ( $product->id == $first_products_ids[0] ) {
-                    $first_products[] = $product;
-                    unset($products[$key]);
+                    $first_products[0] = $product;
                 }
 
                 if ( $product->id == $first_products_ids[1] ) {
-                    $first_products[] = $product;
-                    unset($products[$key]);
+                    $first_products[1] = $product;
                 }
-
                 if ( $product->id == $first_products_ids[2] ) {
-                    $first_products[] = $product;
-                    unset($products[$key]);
+                    $first_products[2] = $product;
+                }
+                if ( $product->id == $first_products_ids[3] ) {
+                    $first_products[3] = $product;
+                }
+                if ( $product->id == $first_products_ids[4] ) {
+                    $first_products[4] = $product;
+                }
+                if ( $product->id == $first_products_ids[5] ) {
+                    $first_products[5] = $product;
+                }
+                if ( $product->id == $first_products_ids[6] ) {
+                    $first_products[6] = $product;
+                }
+                if ( $product->id == $first_products_ids[7] ) {
+                    $first_products[7] = $product;
+                }
+                if ( $product->id == $first_products_ids[8] ) {
+                    $first_products[8] = $product;
                 }
 
             }
 
-            $sortedProducts = array();
+            ksort($first_products);
 
-            foreach( $first_products as $product ) {
-                $sortedProducts[] = $product;
-            }
-
-            foreach( $products as $product ) {
-                $sortedProducts[] = $product;
-            }
-
-            $num_of_poducts = count($sortedProducts);
-
-            //unset($sortedProducts[$num_of_poducts - 1]);
         }
 
-        return $sortedProducts;
+        return $first_products;
 
     }
 

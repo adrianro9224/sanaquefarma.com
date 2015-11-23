@@ -44,6 +44,25 @@ class Product_model extends CI_Model {
 
     }
 
+        public function get_by_product_ids( $product_ids_to_search ) {
+
+        $this->db->where_in('id', $product_ids_to_search );
+
+        $query = $this->db->get('product');
+
+        if( $query->num_rows() > 0 ) {
+
+            $products = $query->result();
+
+            $this->calculate_prices_to_client( $products );
+
+            return $products;
+        }
+
+        return NULL;
+
+    }
+
     public function get_all_just_names_and_presentation () {
 
         $this->db->select('id, name, presentation, lab');
