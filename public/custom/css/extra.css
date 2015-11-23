@@ -916,7 +916,7 @@ fieldset[disabled] .btn-primary.active {
 
 #home_product_list .product-product a:hover {
 	border: 2px solid #FFF;	
-	color: #00AFEF;	
+	color: #00AFEF !important;	
 }
 
 .product-product .product-price .old-price {
