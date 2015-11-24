@@ -18,14 +18,14 @@
 				<span class="pull-right value" ng-bind="shippingCharge | currency : '$' : 0" ng-show="!shoppingcart.shippingFree"></span>
 			</div>
 		</div>
-		<div id="total-products" class="shopping-cart-item">
+		<!--<div id="total-products" class="shopping-cart-item">
 			<div class="shopping-cart-item-content">
 				<span class="title">IVA</span>
 			</div>
 			<div class="shopping-cart-item-content">
 				<span class="pull-right value" ng-bind="tax | currency : '$' : 0"></span>
 			</div>
-		</div>
+		</div>-->
 		<div id="total-products" class="shopping-cart-item">
 			<div class="shopping-cart-item-content">
 				<span class="title">Total</span>

@@ -766,6 +766,10 @@ span.label.label-primary {
 }
 
 #account-content span{
+    color: #00AFEF;
+}
+
+#aux-search-table a {
     color: #737373;
 }
 
@@ -1689,7 +1693,7 @@ a:hover.promelight-button {
     top: 3.4em;
     width: 83.3%;
     margin: 0;
-    border: 2px solid #ED2F59;
+    border: 2px solid #00AFEF;
     border-top: none;
 }
 #aux-search-table table tr {

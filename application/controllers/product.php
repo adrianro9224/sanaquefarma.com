@@ -648,9 +648,12 @@ class Product extends MY_Controller {
 				$data['account_id'] = $session_data[$account_types[1] . '_id'];
 				$data['user_logged'] = true;
 			}
-		}
+            $data['user_logged_account'] = $account;
+		}else {
+            $data['user_logged_account'] = NULL;
+        }
 
-        $data['user_logged_account'] = $account;
+
 		
 		$breadcrumb = new stdClass();
 		

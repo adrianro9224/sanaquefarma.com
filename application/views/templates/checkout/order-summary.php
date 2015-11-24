@@ -80,14 +80,14 @@
 							<span class="pull-right value" ng-bind="order.shoppingcart.shippingCharge | currency : '$' : 0" ng-show="!order.shoppingcart.shippingFree"></span>
 						</div>
 					</div>
-					<div id="total-products" class="order-summary-item">
+					<!--<div id="total-products" class="order-summary-item">
 						<div class="order-summary-item-content">
 							<span class="title">IVA</span>
 						</div>
 						<div class="order-summary-item-content">
 							<span class="pull-right value" ng-bind="order.shoppingcart.tax | currency : '$' : 0"></span>
 						</div>
-					</div>
+					</div>-->
                     <div id="total-products" class="order-summary-item">
                         <div class="order-summary-item-content">
                             <span class="title">Puntos que ganarás</span>
