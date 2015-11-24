@@ -52,5 +52,19 @@
 		<p class="bg-warning">Sin compras</p>			
 	<?php endif;?>
 </div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-info">
+            <div class="panel-heading"><i class="fa fa-gift"></i> Puntos acumulados</div>
+            <div class="panel-body">
+                <?php if (  isset($points) ):?>
+                    <span>Ya cuentas con <strong><?= $points . " puntos"?></strong>, podrás redimirlos cuando quieras!!</span>
+                <?php else:?>
+                    <span>Aún no tienes puntos <i class="fa fa-frown-o"></i>. Por cada $1000 pesos en compras acumulas 10 puntos, que podrás redimir en en productos de sanaquefarma <i class="fa fa-gift"></i> </span>
+                <?php endif;?>
+            </div>
+        </div>
+    </div>
+</div>
     
 

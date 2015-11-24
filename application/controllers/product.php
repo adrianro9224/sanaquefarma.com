@@ -535,6 +535,7 @@ class Product extends MY_Controller {
             }
         }
 
+        $data['user_logged_account'] = $account;
 
         $breadcrumb = new stdClass();
 
@@ -648,7 +649,8 @@ class Product extends MY_Controller {
 				$data['user_logged'] = true;
 			}
 		}
-		
+
+        $data['user_logged_account'] = $account;
 		
 		$breadcrumb = new stdClass();
 		

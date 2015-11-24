@@ -197,7 +197,7 @@ class Account extends MY_Controller {
 
 				$this->_do_login( $account , $data, $account_types);
 				
-				$notifications['success'][] = "Tu cuenta a sido creada con éxito, te hemos obsequiado <strong>1000 puntos</strong> que podrás redimir cuando quieras, bienvenido a VirtualFarma!";
+				$notifications['success'][] = "Tu cuenta a sido creada con éxito, te hemos obsequiado <strong>1000 puntos</strong> que podrás redimir cuando quieras, bienvenido a sanaquefarma!";
 				
 				$data['notifications'] = $notifications;
 				

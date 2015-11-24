@@ -5,7 +5,7 @@
 	<div class="panel-body" ng-if="shippingData">
 		<p>Por favor ingresa los datos de la persona a quien se la hará el envío.
         <!-- helptext -->
-        <span id="helpBlock" class="help-block">Los campos con <span class="primary-emphasis">*</span> son obligatorios.</span>
+        <span id="helpBlock" class="help-block">Los campos con <span class="secondary-emphasis">*</span> son obligatorios.</span>
         <!-- helptext -->
         <!--<div id="checkout-map-canvas"></div>-->
 		<form id="shipping-data-form" name="ShippingDataForm" ng-controller="ShippingDataFormCtrl" method="post" novalidate >
@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group form-group-sm" ng-class="{'has-error': !ShippingDataForm.shippingDataNames.$valid && ShippingDataForm.shippingDataNames.$dirty}">
-                            <label for="shippingDataNames">Nombres<span class="primary-emphasis">*</span></label>
+                            <label for="shippingDataNames">Nombres<span class="secondary-emphasis">*</span></label>
 
                             <input type="text" name="shippingDataNames" ng-model="order.shippingData.names" class="form-control"  id="shippingDataNames" placeholder="Ingresa tus nombres" ng-init="order.shippingData.names='<?= ( isset($shipping_data->names) ) ? $shipping_data->names : null ?>'" ng-maxLength="50" required>
                             <!-- tooltip -->
@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group form-group-sm" ng-class="{'has-error': !ShippingDataForm.shippingDataLastNames.$valid && ShippingDataForm.shippingDataLastNames.$dirty}">
-                            <label for="shippingDataLastNames">Apellidos<span class="primary-emphasis">*</span></label>
+                            <label for="shippingDataLastNames">Apellidos<span class="secondary-emphasis">*</span></label>
 
                             <input type="text" name="shippingDataLastNames" ng-model="order.shippingData.lastNames" class="form-control" id="shippingDataLastNames" placeholder="Ingresea tus apellidos" ng-init="order.shippingData.lastNames='<?= ( isset($shipping_data->last_names) ) ? $shipping_data->last_names : null ?>'" ng-maxLength="50" required>
                             <!-- tooltip -->
@@ -75,7 +75,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group form-group-sm" ng-class="{'has-error': !ShippingDataForm.shippingDataPhone.$valid && ShippingDataForm.shippingDataPhone.$dirty}">
-                            <label for="shippingDataPhone">Teléfono de contacto<span class="primary-emphasis">*</span></label>
+                            <label for="shippingDataPhone">Teléfono de contacto<span class="secondary-emphasis">*</span></label>
                             <div class="input-group">
                                 <div class="input-group-addon"><i class="fa fa-phone"></i></div>
                                 <input type="text" name="shippingDataPhone" ng-model="order.shippingData.phone" class="form-control" id="shippingDataPhone" placeholder="Ingresa tu teléfono fijo" ng-init="order.shippingData.phone='<?= ( isset($shipping_data->phone) ) ? $shipping_data->phone : null ?>'" ng-maxLength="32" ng-minLength="7" ng-pattern="/[\d-]/" required>
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                         <div class="form-group form-group-sm" ng-class="{'has-error': !ShippingDataForm.shippingDataAddressLine1.$valid && ShippingDataForm.shippingDataAddressLine1.$dirty}">
-                            <label for="shippingDataAddressLine1">Dirección<span class="primary-emphasis">*</span></label>
+                            <label for="shippingDataAddressLine1">Dirección<span class="secondary-emphasis">*</span></label>
                             <input type="text" name="shippingDataAddressLine1" ng-model="order.shippingData.addressLine1" class="form-control" id="shippingDataAddressLine1" placeholder="Ingresa tu dirección" ng-maxLength="50" required>
                             <!-- tooltip -->
                             <div ng-if="ShippingDataForm.shippingDataAddressLine1.$invalid && ShippingDataForm.shippingDataAddressLine1.$dirty">
@@ -169,16 +169,6 @@
                             <!-- helptext -->
                             <span id="helpBlock" class="help-block">Ej: Doctor Julio Rodriguez</span>
                             <!-- helptext -->
-                        </div>
-                        <div class="form-group form-group-sm">
-                            <label for="exampleInputFile">Imagen de tu formula médica</label>
-                            <input type="file" id="exampleInputFile" required>
-                            <p class="help-block">Sube una foto de tu formula médica.</p>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Ó marca aquí si deseas hacerlo al momento de la entréga
-                            </label>
                         </div>
                     </div>
                 </div>

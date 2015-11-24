@@ -12,6 +12,6 @@
         </section>
     </div>
     <div class="modal-footer">
-        <button class="btn btn-warning" ng-click="cancel()">Cerrar</button>
+        <button class="btn btn-primary" ng-click="cancel()">Cerrar</button>
     </div>
 </script>

@@ -275,10 +275,14 @@ span.caret {
 .container-fluid #nav.row{
 	/*padding-top: 5px;*/
 }
-    
+
+.breadcrumb a,
+.breadcrumb-wrapper span {
+    color: #00AFEF;
+}
 
 .breadcrumb-wrapper {
-	background-color: #E5E5E5;
+	background-color: #D0E8E8;
 	border-bottom: 1px solid #ccc;
 	padding: 15px 0;
 	margin-bottom: 20px;
@@ -386,6 +390,10 @@ a , .emphasis, span {
 	color: #D7FE00;
 }
 
+.input-group-addon span.glyphicon, .input-group-addon i {
+    color: #00AFEF;
+}
+
 #product_listing .product-product .product-body h3 {
     color: #00AFEF;
 }
@@ -435,11 +443,11 @@ button.btn.btn-default, a.btn.btn-default {
 
 
 #my-account-options-banner .btn-group i, #checkout-panel-nav .btn-group i {
-	color: #05A8AA;
+	color: #00AFEF;
 }
 
 p.bg-primary {
-	background-color: #05A8AA;
+	background-color: #00AFEF;
 }
 
 
@@ -603,6 +611,10 @@ p.bg-primary, p.bg-warning, p.bg-info {
 	border-radius: 5px;
 }
 
+.bg-warning {
+    background-color: #D9EDF7;
+}
+
 .pathology-description-well p.bg-primary.pathology-description-well-title {
 	font-size: 30px;
 	padding: 7px;
@@ -723,16 +735,45 @@ section #my-account .panel.panel-default {
 }
 
 #mini-shopping-cart-details.table-emphasis {
-	border-top: 2px solid #16A085;
-	border-bottom: 2px solid #16A085;
+	border-top: 2px solid #00AFEF;
+	border-bottom: 2px solid #00AFEF;
 }
 
 .shopping-cart-item.end-item {
 	border: none;
 }
 
+span.label.label-primary {
+    background-color: #00AFEF;
+}
+
 #order-summary-container a#increase, #order-summary-container a#decrease {
 	text-decoration: none;
+}
+
+#order-summary-container i,
+#order-summary-container .order-summary-item .order-summary-item-content span.title
+{
+    color: #00AFEF;
+}
+
+#increase i {
+    color: #00AFEF;
+}
+
+#decrease i {
+    color: #00AFEF;
+}
+
+#account-content span{
+    color: #737373;
+}
+
+section#shopping-cart-panel .shopping-cart-item-content span.title {
+    color: #00AFEF;
+}
+#mini-shopping-cart-details span {
+    color: #00AFEF;
 }
 
 #order-summary .order-summary-input-container>input, #product_listing .stock-dropdown input{

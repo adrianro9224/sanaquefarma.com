@@ -62,6 +62,8 @@ class Checkout extends MY_Controller {
 
 			$account_data = $this->get_account($session_data[$account_types[1] . '_id']);
 
+            $data['user_logged_account'] = $account_data;
+
             if ( isset($account_data->points) )
                 $data['points'] = $account_data->points;
 

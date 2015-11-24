@@ -40,6 +40,9 @@ class Home extends MY_Controller {
 			$account_types = $session_data['account_types'];
 			$data['account_types'] = $session_data['account_types'];
 		}
+        $account = $this->account_model->get_account_by_id($session_data[$account_types[1] . '_id']);
+
+        $data['user_logged_account'] = $account;
 		
 		$categories = $this->get_categories();
         $active_ingredients = $this->get_active_ingredients();

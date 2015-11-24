@@ -7,7 +7,7 @@
                 <div id="search-container">
                     <form name="searchProductForm" class="search-form" role="search" action="<?= base_url() . 'product/search_product'?>" method="post" autocomplete="off">
                         <div id="search-module" class="pull-left">
-                            <input type="text" name="productName" id="productName" ng-change="search( productNameToSearch, searchProductForm.productName.$valid )" ng-model="productNameToSearch" ng-model="productNameToSearch" class="form-control" placeholder="BUSQUE AQUÍ SU PRODUCTO" required="required">
+                            <input type="text" name="productName" id="productName" ng-change="search( productNameToSearch, searchProductForm.productName.$valid )" ng-model="productNameToSearch" ng-model="productNameToSearch" class="form-control" placeholder="BUSCA AQUÍ TU PRODUCTO" required="required">
                             <!-- <input popover-placement="top" popover="Escríbe aquí el nombre del producto que deseas!"  popover-trigger="focus" type="text" name="productName" id="productName" ng-change="search( productNameToSearch, searchProductForm.productName.$valid )" ng-model="productNameToSearch" ng-model="productNameToSearch" class="form-control" placeholder="Busca aquí tus productos" required="required"> -->
                             <!--<span for="productName" class="form-control-feedback"><i class="fa fa-search"></i></span>-->
                         </div><!-- /input-group -->
@@ -73,11 +73,10 @@
                                         </li>
                                         <!-- <li><a href="/contact" title="Comunícate con nosotros" >Contacto</a></li> -->
                                     </ul>
-
                                     <ul class="nav navbar-nav navbar-right">
                                         <?php if( $user_logged ):?>
                                             <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones <i class="fa fa-user"></i></span></a>
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= $user_logged_account->first_name; ?> <i class="fa fa-user"></i></span></a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="/account/log_in"><i class="fa fa-cog"></i> Panel</a></li>
                                                     <li class="divider"></li>

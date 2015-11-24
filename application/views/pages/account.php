@@ -36,35 +36,35 @@
                     <div class="col-md-6 col-md-offset-1" ng-controller="RegisterForm">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3>Nuevo usuarioCliente</h3>
+                                <h3>Nuevo usuario</h3>
                             </div>
                             <div class="panel-body">
-                                <p>Para registrarte por favor completa el siguiente formulario:</p>
+                                <p>Para registrarte por favor completa el siguiente <formulario></formulario>:</p>
                                 <form id="sign-up-form" name="SignUpForm" action="<?= base_url() . 'account/sign_up' ?>" method="post" novalidate autocomplete="off">
                                     <div class="form-group" ng-class="{'has-error': !SignUpForm.userFirstName.$valid && SignUpForm.userFirstName.$dirty}">
-                                        <label for="userFirstName">Primer Nombre<span class="primary-emphasis">*</span></label>
-                                        <input type="text" name="userFirstName" ng-model="userFirstName" class="form-control" id="userFirstName" placeholder="Ingrese su nombre" ng-maxLength="50" required>
+                                        <label for="userFirstName">Nombres<span class="primary-emphasis">*</span></label>
+                                        <input type="text" name="userFirstName" ng-model="userFirstName" class="form-control" id="userFirstName" placeholder="Ingresa tus nombres" ng-maxLength="64" required>
                                         <!-- tooltip -->
                                         <div ng-if="SignUpForm.userFirstName.$invalid && SignUpForm.userFirstName.$dirty">
                                             <div class="arrow-up-error">
                                             </div>
                                             <div class="farma-tooltip-error">
-                                                <span ng-if="SignUpForm.userFirstName.$error.required && SignUpForm.userFirstName.$dirty">Tu primer nombre es obligatorio!</span>
-                                                <span ng-if="SignUpForm.userFirstName.$error.maxlength && SignUpForm.userFirstName.$dirty">Es demaciado extenso!</span>
+                                                <span ng-if="SignUpForm.userFirstName.$error.required && SignUpForm.userFirstName.$dirty">Tus nombres son obligatorios!</span>
+                                                <span ng-if="SignUpForm.userFirstName.$error.maxlength && SignUpForm.userFirstName.$dirty">son demaciado extensos!</span>
                                             </div>
                                         </div>
                                         <!-- tooltip -->
                                     </div>
                                     <div class="form-group" ng-class="{'has-error': !SignUpForm.userLastName.$valid && SignUpForm.userLastName.$dirty}">
-                                        <label for="userlastName">Primer Apellido<span class="primary-emphasis">*</span></label>
-                                        <input type="text" name="userLastName" ng-model="userLastName" class="form-control" id="userLastName" placeholder="Ingrese su Apellido" ng-maxLength="50" required>
+                                        <label for="userlastName">Apellidos<span class="primary-emphasis">*</span></label>
+                                        <input type="text" name="userLastName" ng-model="userLastName" class="form-control" id="userLastName" placeholder="Ingresa tus apellidos" ng-maxLength="64" required>
                                         <!-- tooltip -->
                                         <div ng-if="SignUpForm.userLastName.$invalid && SignUpForm.userLastName.$dirty">
                                             <div class="arrow-up-error">
                                             </div>
                                             <div class="farma-tooltip-error">
-                                                <span ng-if="SignUpForm.userLastName.$error.required && SignUpForm.userLastName.$dirty">Tu primer apellido es obligatorio!</span>
-                                                <span ng-if="SignUpForm.userLastName.$error.maxlength && SignUpForm.userLastName.$dirty">Es demaciado extenso!</span>
+                                                <span ng-if="SignUpForm.userLastName.$error.required && SignUpForm.userLastName.$dirty">Tus apellidos son obligatorios!</span>
+                                                <span ng-if="SignUpForm.userLastName.$error.maxlength && SignUpForm.userLastName.$dirty">Son demaciado extensos!</span>
                                             </div>
                                         </div>
                                         <!-- tooltip -->
@@ -73,7 +73,7 @@
                                         <label for="userEmail">Correo electrónico<span class="primary-emphasis">*</span></label>
                                         <div class="input-group">
                                             <div class="input-group-addon">@</div>
-                                            <input type="text" name="userEmail" ng-model="userEmail" ng-change="isEqual( userEmail, 'e' )" class="form-control" id="userEmail" placeholder="Ingrese su correo electrónico" ng-pattern="/[\w.]+?\@{1}[\w.]+(\.+[\w.]+)/" ng-maxLength="90" required>
+                                            <input type="text" name="userEmail" ng-model="userEmail" ng-change="isEqual( userEmail, 'e' )" class="form-control" id="userEmail" placeholder="Ingresa tu correo electrónico" ng-pattern="/[\w.]+?\@{1}[\w.]+(\.+[\w.]+)/" ng-maxLength="90" required>
                                         </div>
                                         <!-- tooltip -->
                                         <div ng-if="SignUpForm.userEmail.$invalid && SignUpForm.userEmail.$dirty">
@@ -190,7 +190,7 @@
                                 <form id="log-in-form" name="LogInForm" action="<?= base_url() . 'account/log_in' ?>" method="post" novalidate >
                                     <div class="form-group" ng-class="{ 'has-error' : !LogInForm.userEmail.$valid && LogInForm.userEmail.$dirty }">
                                         <label for="userEmail">Correo electrónico<span class="primary-emphasis">*</span></label>
-                                        <input type="text" name="userEmail" ng-model="userEmail" class="form-control" id="InputEmail" placeholder="Ingrese su correo electrónico" ng-maxLength="90" ng-pattern="/[\w.]+?\@{1}[\w.]+(\.+[\w.]+)/" required>
+                                        <input type="text" name="userEmail" ng-model="userEmail" class="form-control" id="InputEmail" placeholder="Ingresa tu correo electrónico" ng-maxLength="90" ng-pattern="/[\w.]+?\@{1}[\w.]+(\.+[\w.]+)/" required>
                                         <!-- tooltip -->
                                         <div ng-if="LogInForm.userEmail.$invalid && LogInForm.userEmail.$dirty">
                                             <div class="arrow-up-error">
@@ -205,7 +205,7 @@
                                     </div>
                                     <div class="form-group" ng-class="{ 'has-error' : !LogInForm.userPassword.$valid && LogInForm.userPassword.$dirty }">
                                         <label for="userPassword">Contraseña<span class="primary-emphasis">*</span></label>
-                                        <input type="password" name="userPassword" ng-model="userPassword" class="form-control" id="InputPassword" placeholder="Ingrese su contraseña" ng-maxLength="50" ng-minLength="6" required>
+                                        <input type="password" name="userPassword" ng-model="userPassword" class="form-control" id="InputPassword" placeholder="Ingresa tu contraseña" ng-maxLength="50" ng-minLength="6" required>
                                         <!-- tooltip -->
                                         <div ng-if="LogInForm.userPassword.$invalid && LogInForm.userPassword.$dirty">
                                             <div class="arrow-up-error">
