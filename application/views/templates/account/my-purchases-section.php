@@ -14,7 +14,7 @@
 <!-- 	</div> -->
 	<div class="panel panel-default">
 	<!-- Default panel contents -->
-	<div class="panel-heading">Description de tus compras</div>
+	<div class="panel-heading">Descripción de tus compras</div>
 	<div class="panel-body">
 		<p>En esta sección podrás ver todos los detalles de cada una de tus compras.</p>
 	</div>

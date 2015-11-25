@@ -55,7 +55,7 @@
 	                                    
 	                                </div>
 	                                <div class="caption">
-	                                	<a href="<?= '/product/search_product/' . lcfirst(str_replace(' ', '_', $product->name))  ?>" class="btn btn-primary">Agregar</a>
+	                                	<a href="<?= '/product/show_product_by_id/' . $product->id  ?>" class="btn btn-primary">Agregar</a>
 	                                </div>
 	                            </div>
 	                        </div>

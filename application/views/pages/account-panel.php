@@ -37,7 +37,7 @@
 				<div class="row" id="user-name-panel">
 					<div class="col-md-6 no-padding">
 						<p class="bg-primary">
-							<?= 'Hola! ' . $user_logged_account->first_name?>
+							<?= '¡Hola ' . $user_logged_account->first_name . '!'?>
 						</p>
 					</div>
 				</div>
