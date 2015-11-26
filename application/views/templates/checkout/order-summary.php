@@ -5,7 +5,7 @@
 	<div class="panel-body" ng-if="orderSummary">
 		<div id="order-summary-container" ng-hide="order.sended">
 			<p>Acá esta toda la información relacionada con tu compra:</p>
-            <p class="bg-info">Por cada $1000 pesos en compras recibirás 20 puntos :D <i class="fa fa-gift"></i></p>
+            <p class="bg-info">Por cada $1000 pesos en compras recibirás 10 puntos :D <i class="fa fa-gift"></i></p>
             <!-- Use points -->
             <?php if ( isset($points) ): ?>
             <div class="checkbox">
@@ -109,8 +109,7 @@
 		</div>
 		<div class="well" ng-show="order.sended">
 		<p class="bg-primary">
-			Tu orden a sido realizada con éxito, en este momento uno de nuestro mensajeros va en camino con tu pedido en la dirrecíon {{order.shippingData.addressLine1}}. 
-			Tu pedido estará allí en menor tiempo posible, gracias por tu compra!.
+			Tu orden se realizó satisfactoriamente. Tu pedido se despachará a la dirección {{order.shippingData.addressLine1}} y uno de nuestros mensajeros estará allí en el menor tiempo posible. Gracias por tu compra.
 		</p>
         <p class="bg-primary">
             Acumulaste {{order.points}}
