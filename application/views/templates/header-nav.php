@@ -84,8 +84,8 @@
                                                 </ul>
                                             </li>
                                         <?php else:?>
-                                            <li><a class="btn btn-default" href="/account" role="button"><i class="fa fa-sign-in"></i> Regístrate</a></li>
-                                            <li><a class="btn btn-default" href="/account" role="button"><i class="fa fa-child"></i> Iniciar sesión</a></li>
+                                            <li><a class="btn btn-default" href="/account#sign-up-form" role="button"><i class="fa fa-sign-in"></i> Regístrate</a></li>
+                                            <li><a class="btn btn-default" href="/account#log-in-form" role="button"><i class="fa fa-child"></i> Iniciar sesión</a></li>
                                         <?php endif;?>
                                     </ul>
 

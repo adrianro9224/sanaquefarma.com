@@ -39,7 +39,7 @@
                                 <h3>Nuevo usuario</h3>
                             </div>
                             <div class="panel-body">
-                                <p>Para registrarte por favor completa el siguiente <formulario></formulario>:</p>
+                                <p>Para registrarte por favor completa el siguiente formulario:</p>
                                 <form id="sign-up-form" name="SignUpForm" action="<?= base_url() . 'account/sign_up' ?>" method="post" novalidate autocomplete="off">
                                     <div class="form-group" ng-class="{'has-error': !SignUpForm.userFirstName.$valid && SignUpForm.userFirstName.$dirty}">
                                         <label for="userFirstName">Nombres<span class="primary-emphasis">*</span></label>
