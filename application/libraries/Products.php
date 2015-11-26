@@ -9,7 +9,7 @@ Class Products {
         $CI =& get_instance();
 		$CI->load->model('product_model');
 
-		$first_products_ids = array( '2', '5', '56345', '43289', '7', '9', '6', '1', '3');
+		$first_products_ids = array( '2', '43289', '56345', '5', '6', '3', '7', '9', '1' );
 
         $products = $CI->product_model->get_by_product_ids( $first_products_ids );
 
