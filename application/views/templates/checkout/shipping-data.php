@@ -3,7 +3,7 @@
 		<h4><i class="fa fa-truck"></i> Paso 1: datos de envío <i ng-show="order.shippingData.status" class="fa fa-check"> Completado </i> </h4>
 	</div>
 	<div class="panel-body" ng-if="shippingData">
-		<p>Por favor ingresa los datos de la persona a quien se la hará el envío.
+		<p>Por favor completa los datos de envío.
         <!-- helptext -->
         <span id="helpBlock" class="help-block">Los campos con <span class="secondary-emphasis">*</span> son obligatorios.</span>
         <!-- helptext -->
@@ -56,13 +56,14 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group form-group-sm" ng-class="{'has-error': !ShippingDataForm.shippingDataId.$valid && ShippingDataForm.shippingDataId.$dirty}">
-                            <label for="shippingDataId">Número de identificación</label>
-                            <input type="text" name="shippingDataId" ng-model="order.shippingData.id" class="form-control" id="shippingDataId" placeholder="Ingrese su numero de identificación" ng-init="order.shippingData.id='<?= ( isset($shipping_data->identification_number) ) ? $shipping_data->identification_number : null ?>'" ng-pattern="/[\d-.]/">
+                            <label for="shippingDataId">Número de identificación<<span class="secondary-emphasis">*</span>/label>
+                            <input type="text" name="shippingDataId" ng-model="order.shippingData.id" class="form-control" id="shippingDataId" placeholder="Ingrese su numero de identificación" ng-init="order.shippingData.id='<?= ( isset($shipping_data->identification_number) ) ? $shipping_data->identification_number : null ?>'" ng-pattern="/[\d-.]/" required>
                             <!-- tooltip -->
                             <div ng-if="ShippingDataForm.shippingDataId.$invalid && ShippingDataForm.shippingDataId.$dirty">
                                 <div class="arrow-up-error">
                                 </div>
                                 <div class="farma-tooltip-error">
+                                    <span ng-if="ShippingDataForm.shippingDataId.$error.required && ShippingDataForm.shippingDataId.$dirty">Tu nuemero de cédula es obligatorio!</span>
                                     <span ng-if="ShippingDataForm.shippingDataId.$error.maxlength && ShippingDataForm.shippingDataId.$dirty">Es muy extenso!</span>
                                     <span ng-if="ShippingDataForm.shippingDataId.$error.pattern && ShippingDataForm.shippingDataId.$dirty">Solo se permiten valores numéricos y los caractéres {-.}</span>
                                 </div>
@@ -133,13 +134,14 @@
                             <!-- helptext -->
                         </div>
                         <div class="form-group form-group-sm" ng-class="{'has-error': !ShippingDataForm.shippingDataNeighborhood.$valid && ShippingDataForm.shippingDataNeighborhood.$dirty}">
-                            <label for="shippingDataNeighborhood">Barrio</label>
-                            <input type="text" name="shippingDataNeighborhood" ng-model="order.shippingData.neighborhood" class="form-control" id="shippingDataNeighborhood" placeholder="Ingresa tu dirección" ng-maxLength="50">
+                            <label for="shippingDataNeighborhood">Barrio<span class="secondary-emphasis">*</span></label>
+                            <input type="text" name="shippingDataNeighborhood" ng-model="order.shippingData.neighborhood" class="form-control" id="shippingDataNeighborhood" placeholder="Ingresa tu dirección" ng-maxLength="50" required>
                             <!-- tooltip -->
                             <div ng-if="ShippingDataForm.shippingDataNeighborhood.$invalid && ShippingDataForm.shippingDataNeighborhood.$dirty">
                                 <div class="arrow-up-error">
                                 </div>
                                 <div class="farma-tooltip-error">
+                                    <span ng-if="ShippingDataForm.shippingDataNeighborhood.$error.required && ShippingDataForm.shippingDataNeighborhood.$dirty">El nombre de tu barrio es obligatorio!</span>
                                     <span ng-if="ShippingDataForm.shippingDataNeighborhood.$error.maxlength && ShippingDataForm.shippingDataNeighborhood.$dirty">El nombre de tu barrio es muy extenso!</span>
                                 </div>
                             </div>
