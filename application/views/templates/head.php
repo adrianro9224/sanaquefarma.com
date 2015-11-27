@@ -138,9 +138,13 @@
     <!-- Google Maps API -->
 
     <!-- Histats.com  START (hidden counter)-->
-    
-    <!-- Histats.com  END  -->
-
+	<script type="text/javascript">document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
+	<a href="http://www.histats.com" target="_blank" title="contadores" ><script  type="text/javascript" >
+	try {Histats.start(1,3253248,4,0,0,0,"");
+	Histats.track_hits();} catch(err){};
+	</script></a>
+	<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?3253248&101" alt="contadores" border="0"></a></noscript>
+	<!-- Histats.com  END  -->
     <!-- Goole Analitics -->
     <!--<script type="text/javascript" src="<?//= base_url() . 'public/Google-Analitics/analyticstracking.js'?>"></script>-->
     <!-- Goole Analitics -->
