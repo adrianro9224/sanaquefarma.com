@@ -25,6 +25,21 @@ div , body, html{
 * header-top styles start
 */
 
+#product_link_in_purchases a{
+	color: #00AFEF;
+}
+
+span.glyphicon {
+	color: #00AFEF;	
+}
+
+#sales-creator span {
+	color: #00AFEF;	
+}
+i.fa {
+	color: #00AFEF;		
+}
+
 /* Buttons */
 a#button-payment.btn-primary {
 	background-color: #00AFEF;

@@ -35,7 +35,7 @@
 				<?php foreach ( $orders as $order ):?>
 					<tr>
 						<td><?= $order->send_date?></td>
-						<td>
+						<td id="product_link_in_purchases">
 							<?php foreach ( $order->products as $product ):?>
 								<a href="<?= base_url() . 'product/search_product/' . str_replace(' ', '_', $product->name) ?>"><?=$product->name?></a>
 							<?php endforeach;?>
