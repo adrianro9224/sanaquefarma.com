@@ -22,7 +22,7 @@
 						  <th>#</th>
 						  <th>Producto</th>
 						  <th>Presentación</th>
-						  <th>IVA</th>
+						  <!--<th>IVA</th>-->
 						  <th>Precio Unit</th>
 						  <th>Cantidad</th>
 						  <th>Total</th>
@@ -34,7 +34,7 @@
 						  <th ng-bind="key + 1"></th>
 						  <td ng-bind="product.name"></td>
 						  <td ng-bind="product.presentation"></td>
-						  <td ng-bind="product.tax | currency : '$' : 0"></td>
+						  <!--<td ng-bind="product.tax | currency : '$' : 0"></td>-->
 						  <td ng-bind="product.price | currency : '$' : 0"></td>
 						  <td ng-init="order.shoppingcart.products[key].cant = product.cant" class="order-summary-input-container">
 						  	<a id="decrease" ng-click="recalculateTotals( key , 'decrease' )"><i class="fa fa-minus fa-lg"></i></a>
@@ -114,18 +114,18 @@
         <p class="bg-primary">
             Acumulaste {{order.points}}
         </p>
-		<h3>¿Que desear hacer ahora?</h3>
-		<div class="list-group">
+		<!--<h3>¿Que desear hacer ahora?</h3>-->
+		<!--<div class="list-group">-->
 			<!-- Add if isset discount -->
-			<a href="<?php base_url() . 'product/search_product/nuestros_productos'?>" class="list-group-item active">
+			<!--<a href="<?php base_url() . 'product/search_product/nuestros_productos'?>" class="list-group-item active">
 				<h4 class="list-group-item-heading">Hacer otra compra, aprovecha nuestras ofertas!</h4>
 				<p class="list-group-item-text">En esta sección encontraras todos nuestros prodructos con descuentos.</p>
-			</a>
-			<a href="/account/log_in" class="list-group-item">
+			</a>-->
+			<!--<a href="/account/log_in" class="list-group-item">
 				<h4 class="list-group-item-heading">Ir a mi cuenta</h4>
 				<p class="list-group-item-text">Acá podras editar tus datos personales, ver tus mensájes.</p>
-			</a>
-		</div>		
+			</a>-->
+		<!--</div>-->
 		</div>
 		<a href="/account/log_in" ng-show="order.sended" id="go-to-orders-button" class="btn btn-success btn-lg" role="button">Compra completada, ir a mi cuenta</a>
 		<a ng-click="stepCompleted( order, 'orderSummary' )" ng-hide="order.sended" ng-disabled="( !(order.shippingData.status && order.paymentMethod.status) || sendingOrder ) || order.shoppingcart.minimumOrderValueInvalid" id="confirm-order-button" class="btn btn-primary btn-lg" role="button">Confirmar Orden <i ng-if="sendingOrder" class="fa fa-spinner fa-pulse"></i></a>

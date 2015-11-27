@@ -3,12 +3,12 @@
 		<h4><i class="fa fa-money"></i> Paso 2: método de pago <i ng-show="order.paymentMethod.status" class="fa fa-check" > Completado</i></h4>
 	</div>
 	<div class="panel-body" ng-if="paymentMethod" >
-		<p>Por favor, seleccione el método de envío preferido para usar en esta orden.
+		<p>Por favor, seleccione el método de pago preferido.
 		Todas las transacciones son seguras y cifradas, Para obtener más información, por favor ver nuestra política de privacidad.</p>
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h4><i class="fa fa-motorcycle"></i> Pago contra entrega</h4>
+                <h4><i class="fa fa-motorcycle"></i> Opciones</h4>
             </div>
             <div class="panel-body">
                 <!-- helptext -->
