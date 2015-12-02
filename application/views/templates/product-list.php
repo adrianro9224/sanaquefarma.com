@@ -5,8 +5,8 @@
 	        	<img src="<?= base_url() . 'assets/images/products/' . $product->uri_img . $product->image_format_id ?>" class="img-responsive" alt="<?= $product->name?>">
                 <?php if( $product->has_discount ): ?>
                      <span class="fa-stack fa-lg">
-                        <i id="promotionWrapper" class="fa fa-circle"></i>
-                        <span id="promotionText">-10%</span>
+                        <i id="promotionWrapperProductList" class="fa fa-circle"></i>
+                        <span id="promotionTextProductList">-10%</span>
                     </span>
                 <?php endif; ?>
 			</div>
@@ -21,7 +21,7 @@
 	                <div class="clearfix">
 	                	<div class="product-price pull-left">
 	                		<?php if( $product->has_discount ): ?>
-	                	    	<span class="new-price" ng-bind="<?= $product->new_price ?> | currency : '$' : 0"></span>
+	                	    	<span class="new-price"><?= 'Antes $' . number_format($product->old_price) . ' Ahora $' . number_format($product->new_price) ?></span>
 	                	    <?php else: ?>
 	                	    	<span class="new-price" ng-bind="<?= $product->price ?> | currency : '$' : 0"></span>
 	                	    <?php endif; ?>

@@ -50,7 +50,11 @@
 	                                    <p><?= $product->presentation ?></p>
 	                                    <div class="product-price">
 	                                        <!-- <span class="old-price" ng-bind="<?= $product->joker ?> | currency : '$' : 0"></span> -->
-	                                        <h3 class="secondary-emphasis" ng-bind="<?= $product->price ?> | currency : '$' : 0"></h3>
+	                                        <?php if( isset($product->has_discount) && $product->has_discount ): ?>
+		                                        <h4 class="secondary-emphasis" ><?= 'Antes $' . number_format($product->old_price) . ' Ahora $' . number_format($product->new_price) ?></h4>
+	                                        <?php else: ?>
+	                                        	<h3 class="secondary-emphasis" ng-bind="<?= $product->price ?> | currency : '$' : 0"></h3>
+	                                    	<?php endif;?>
 	                                    </div>
 	                                    
 	                                </div>

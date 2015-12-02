@@ -304,7 +304,7 @@ class Product_model extends CI_Model {
 
     public function calculate_prices_to_client( &$products ) {
 
-        foreach( $products as $product ) {
+        /*foreach( $products as $product ) {
 
             if( isset($product->tax) ) {
 
@@ -322,6 +322,21 @@ class Product_model extends CI_Model {
             }
 
             $product->joker = $product->price + (bcmul($product->price, 0.05));
+        }*/
+        foreach ( $products as $product ) {
+            
+            $discount = NULL;
+            
+            $product->has_discount = false;
+
+            if( isset($product->discount) ) {
+                
+                $product->has_discount = true;
+                $discount = bcdiv($product->price, $product->discount);
+                $product->old_price = $product->price;
+                $product->new_price = bcsub($product->price, $discount);
+                
+            }
         }
     }
 
