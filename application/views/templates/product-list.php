@@ -14,6 +14,7 @@
 	        	<div class="product-body">
 
 	                <h3><?= $product->name ?></h3>
+                    <p><?= $product->presentation ?></p>
 	                <p><?= $product->description ?></p>
                     <?php if ( isset($product->lab) ): ?>
                         <p><?= $product->lab?></p>
