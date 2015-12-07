@@ -56,7 +56,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group form-group-sm" ng-class="{'has-error': !ShippingDataForm.shippingDataId.$valid && ShippingDataForm.shippingDataId.$dirty}">
-                            <label for="shippingDataId">Número de identificación<<span class="secondary-emphasis">*</span>/label>
+                            <label for="shippingDataId">Número de identificación<span class="secondary-emphasis">*</span></label>
                             <input type="text" name="shippingDataId" ng-model="order.shippingData.id" class="form-control" id="shippingDataId" placeholder="Ingrese su numero de identificación" ng-init="order.shippingData.id='<?= ( isset($shipping_data->identification_number) ) ? $shipping_data->identification_number : null ?>'" ng-pattern="/[\d-.]/" required>
                             <!-- tooltip -->
                             <div ng-if="ShippingDataForm.shippingDataId.$invalid && ShippingDataForm.shippingDataId.$dirty">
