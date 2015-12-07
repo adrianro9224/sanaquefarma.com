@@ -10,8 +10,8 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="Cache-Control" content="max-age=2592000, public" />
-    <meta name="description" content="farmacia en línea a domicilio">
-    <meta name="keywords" content="Droguerías, Domicilios, Domicilios Bogotá, Dynoral Kids, Argel, Argel Flash, Promelight, Promelight Kids, Osteoferol, Cados, Inufib, Inufib Niños, Sucrance,  Droguerías Virtuales, Farmacias Virtuales, Droguería Virtual, Farmacia Virtual, Droguería en Línea, Farmacia en Línea, Droguería Online, Farmacia Online, Medicamentos, Medicamentos a Domicilio, sana que sana">
+    <meta name="description" content="Tienda especializada en productos para la salud, en línea y a domicilio.">
+    <meta name="keywords" content="Droguerías, Domicilios, Domicilios Bogotá, Dynoral Kids, Argel, Argel Flash, Promelight, Promelight Kids, Osteoferol, Cados, Inufib, Inufib Niños, Sucrance,  Droguerías Virtuales, Farmacias Virtuales, Droguería Virtual, Farmacia Virtual, Droguería en Línea, Farmacia en Línea, Droguería Online, Farmacia Online, Medicamentos, Medicamentos a Domicilio, sana que sana,Tienda, tienda especializada, tienda de salud, tienda en línea, productos de salud, bioplus, bio plus, probióticos">
 
 	<!-- Bootstrap css start -->
 	<link rel="stylesheet" type="text/css" href="<?= base_url() . 'public/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css'?>">
@@ -146,6 +146,6 @@
 	<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?3253248&101" alt="contadores" border="0"></a></noscript>
 	<!-- Histats.com  END  -->
     <!-- Goole Analitics -->
-    <!--<script type="text/javascript" src="<?//= base_url() . 'public/Google-Analitics/analyticstracking.js'?>"></script>-->
+    <script type="text/javascript" src="<?= base_url() . 'public/Google-Analitics/analyticstracking.js'?>"></script>
     <!-- Goole Analitics -->
 </head>
