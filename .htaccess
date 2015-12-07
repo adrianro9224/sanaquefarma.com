@@ -1,5 +1,7 @@
 RewriteEngine on
 
+Header add Access-Control-Allow-Origin "sanaquefarma.com"
+
 <Files .htaccess>
 	order allow,deny
 	deny from all
