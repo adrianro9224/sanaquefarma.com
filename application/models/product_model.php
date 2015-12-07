@@ -180,6 +180,7 @@ class Product_model extends CI_Model {
 	}
 	
 	public function get_by_name( $pattern_to_search ) {
+        
 
         $text_exploded = explode(' ', $pattern_to_search);
 
