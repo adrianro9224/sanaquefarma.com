@@ -181,15 +181,26 @@ class Product_model extends CI_Model {
 	
 	public function get_by_name( $pattern_to_search ) {
         
+        if( strpos( $pattern_to_search, ' ' ) !== false ) {
 
-        $text_exploded = explode(' ', $pattern_to_search);
+            $text_exploded = explode(' ', $pattern_to_search);
 
-		////$this->db->like('name', $pattern_to_search);
+            $this->db->like('name', $text_exploded[0]);
 
-        $this->db->like('name', $text_exploded[0]);
+            if ( count($text_exploded) > 1 )
+                $this->db->or_like('name', $text_exploded[1]);
+        }else {
+            $num_of_chars = count_chars($pattern_to_search);
 
-        if ( count($text_exploded) > 1 )
-            $this->db->like('name', $text_exploded[1]);
+            if( $num_of_chars >= 3 ){
+                $part_to_search  = substr( $pattern_to_search, 0, 3);    
+            }else {
+                $part_to_search= $pattern_to_search;
+            }
+            $this->db->or_like('name', $part_to_search);
+        }
+        
+        $this->db->or_like('keywords', $pattern_to_search);
 
         $this->db->where('price !=', 0);
 		$query = $this->db->get('product');
