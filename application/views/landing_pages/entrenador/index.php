@@ -38,10 +38,10 @@
         <p class="Body P-1"><span class="C-1">El Piso Pélvico es en conjunto de músculos que rodean la vagina y su debilidad es causa de Incontinencia Urinaria y disfunciones sexuales.</span></p>
         <p class="Body P-1"><span class="C-1">El <span class="C-2">entrenador Vaginal </span>ayuda a tonificar los músculos del piso pélvico ya que está diseñado para rehabilitar músculos débiles, &nbsp;dando la capacidad de controlarlos conscientemente, solucionando de forma eficaz la Incontinencia Urinaria, ayudando a la rehabilitación después del embarazo y aumentando el placer sexual, ya que un músculo tonificado aumenta la fuerza de las contracciones orgásmicas y por lo tanto, la posibilidad de orgasmos más seguidos y potentes.</span></p>
       </div>
-      <a href="http://sanaquefarma.com/product/show_product_by_id/43289" target="_blank" id="btn_1" class="OBJ-1 ActiveButton" style="position:absolute;left:386px;top:909px;width:188px;height:56px;">
+      <a href="http://sanaquefarma.com/product/show_product_by_id/43289" target="_blank" id="btn_1" class="OBJ-1 ActiveButton" style="position:absolute;left:386px;top:945px;width:188px;height:56px;">
         <span>¡&nbsp;Compre&nbsp;Ahora&nbsp;!</span>
       </a>
-      <div style="position:absolute;left:291px;top:967px;width:379px;height:26px;overflow:hidden;">
+      <div style="position:absolute;left:291px;top:1007px;width:379px;height:26px;overflow:hidden;">
         <p class="Body P-2"><span class="C-3">Línea para Pedidos </span><span class="C-4">300 3120 </span><span class="C-3">Bogotá D.C.</span></p>
       </div>
       <img alt="ENTRENADOR VAGINAL" src="<?= $landing_resources_url.'wpimages/wp92b8eb31_06.png'?>" style="position:absolute;left:216px;top:34px;width:529px;height:48px;">
