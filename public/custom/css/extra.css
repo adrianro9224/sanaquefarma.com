@@ -573,6 +573,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: #FFF;
 	background-color: #00AFEF;
 	border-color: #D7FE00;
+	border-width: 2px;
 }
 
 .btn-primary:hover,
@@ -584,7 +585,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #00AFEF;
 	color: #FFF !important;
 	border-color: #D7FE00; 
-	border-width: 2px;
+	
 	
 }
 
@@ -1629,23 +1630,23 @@ ICONS START
     font-size: 12px;
 }
 
-.argel-button {
-	background-color: #FF6501;
+.bioplus-button {
+	background-color: #00A9D2;
     padding: 3px 54px;
     text-decoration: none;
     color: #FFF;
     font-weight: bold;
     font-size: 1.4em;
     position: absolute;
-    top: 71%;
-    right: 27%;
+    top: 80%;
+    left: 28%;
     border-radius: 13px;
-    border: 2px solid #FF6501;
+    border: 2px solid #00A9D2;
 }
 
-a:hover.argel-button {
+a:hover.bioplus-button {
     background-color: #FFF;
-    color:#FF6501;
+    color:#00A9D2;
     text-decoration: none;
 }
 
@@ -1670,22 +1671,22 @@ a:hover.dynoral-button {
     color: #484848;
 }
 
-.promelight-button {
-    background-color: #D7FE00;
+.promelite-button {
+    background-color: #3E4095;
     padding: 3px 54px;
     text-decoration: none;
-    color: #484848;
+    color: #FFF;
     font-weight: bold;
     font-size: 1.4em;
     position: absolute;
-    top: 50%;
-    right: 23%;
+    top: 78%;
+    right: 33%;
     border-radius: 13px;
-    border: 2px solid #D7FE00;
+    border: 2px solid #3E4095;
 }
-a:hover.promelight-button {
+a:hover.promelite-button {
     text-decoration: none;
-    border: 2px solid #D7FE00;
+    border: 2px solid #3E4095;
     background-color: #FFF;
     color: #484848;
 

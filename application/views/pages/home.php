@@ -59,7 +59,7 @@
 	                                    
 	                                </div>
 	                                <div class="caption">
-	                                	<a href="<?= '/product/show_product_by_id/' . $product->id  ?>" class="btn btn-primary">Agregar</a>
+	                                	<a href="<?= '/product/show_product_by_id/' . $product->id  ?>" class="btn btn-primary">Comprar</a>
 	                                </div>
 	                            </div>
 	                        </div>
