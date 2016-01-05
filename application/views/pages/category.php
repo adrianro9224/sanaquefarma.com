@@ -38,7 +38,7 @@
 				
 					<!-- category left sidebar start -->
 					<section id="left_sidebar">
-						<div class="col-md-3">
+						<div class="col-md-3 col-md-push-9">
 							<section  id="shopping-cart-panel" ng-controller="ShoppingCartCtrl">
 								<div class="col-md-12" ng-if="shoppingcart.haveProducts">
 									<?php include_once( __ROOT__TEMPLATES__ . 'shopping-cart.php');?>
@@ -54,7 +54,7 @@
 					<!-- product list start -->
 
 					<section ng-controller="ProductListCtrl" id="product_list" >
-						<div class="col-md-9">
+						<div class="col-md-9 col-md-pull-3">
                             <?php if ( isset($pagination) ):?>
                             <section id="product_pagination_top">
                                 <div class="row no-margin">
