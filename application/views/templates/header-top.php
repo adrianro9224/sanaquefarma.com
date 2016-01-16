@@ -12,7 +12,7 @@
                     <div class="header-item-container">
                         <div class="header-item">
                             <i class="fa fa-phone fa-2x"></i>
-                            <span > Linea Nacional</span>
+                            <span > Información y ventas</span>
                         </div>
                         <div class="header-item">
                             <h1>300 3120</h1>

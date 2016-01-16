@@ -23,20 +23,20 @@
 			</div>
 		</div>
 		<!-- Errors over -->
-		
+
 		<!-- Content start -->
 		<section id="carousel" class="hidden-xs">
 			<?php include_once( __ROOT__TEMPLATES__ . 'carousel.php');?>
 		</section>
 		<div class="container-container" id="home-products-container">
-			<div class="container" id="main-products">
+			<div class="container-fluid" id="main-products">
 	            <!-- product list -->
 				<section id="content">
 	                <div id="home_product_list">
 	                    <?php if ( isset($products) ):?>
 	                    <div class="row">
 	                        <?php foreach ( $products as $product ): ?>
-	                        <div class="col-md-4">
+	                        <div class="col-md-2">
 	                            <div class="thumbnail product-product">
 	                                <div class="caption caption-custom">
 	                                	<img src="<?= base_url() . 'assets/images/products/' . $product->uri_img . $product->image_format_id?>" class="img-responsive" alt="<?= $product->name ?>" >
@@ -56,7 +56,7 @@
 	                                        	<h3 class="secondary-emphasis" ng-bind="<?= $product->price ?> | currency : '$' : 0"></h3>
 	                                    	<?php endif;?>
 	                                    </div>
-	                                    
+
 	                                </div>
 	                                <div class="caption">
 	                                	<a href="<?= '/product/show_product_by_id/' . $product->id  ?>" class="btn btn-primary">Comprar</a>
@@ -77,6 +77,6 @@
 				<?php include_once( __ROOT__TEMPLATES__ . 'footer.php');?>
 		</section>
 		<!-- Footer over -->
-	</div>	
+	</div>
 </body>
 </html>
