@@ -19,6 +19,7 @@
 |
 |	http://codeigniter.com/user_guide/general/routing.html
 |
+
 | -------------------------------------------------------------------------
 | RESERVED ROUTES
 | -------------------------------------------------------------------------
@@ -41,7 +42,7 @@
 $route['default_controller'] = "home";
 $route['404_override'] = 'error_404';
 
-
+$route['l/(:any)'] = "landing/index/$1";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
