@@ -47,6 +47,7 @@ class Product_model extends CI_Model {
         public function get_by_product_ids( $product_ids_to_search ) {
 
         $this->db->where_in('id', $product_ids_to_search );
+		$this->db->where('stock >', 0);
 
         $query = $this->db->get('product');
 
