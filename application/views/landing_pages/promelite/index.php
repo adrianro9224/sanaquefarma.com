@@ -39,8 +39,10 @@
       </a>
       <img alt="" src="<?= $landing_resources_url.'wpimages/wpa9bfde0f_06.png'?>" style="position:absolute;left:176px;top:36px;width:608px;height:156px;">
       <img alt="" src="<?= $landing_resources_url.'wpimages/wp27c8b58d_05_06.jpg'?>" style="position:absolute;left:422px;top:197px;width:526px;height:789px;">
-      <div style="position:absolute;left:29px;top:369px;width:476px;height:186px;overflow:hidden;">
+      <div style="position:absolute;left:29px;top:323px;width:476px;height:250px;overflow:hidden;">
         <p class="Normal P-1"><span class="C-1">Es un alimento hiperprotéico e hipocalórico 100% natural, que de forma segura ayuda a disminuir masa grasa aumentando la masa muscular, sin descompensar el metabolismo y manteniendo un equilibro nutricional. Ayuda a disminuir el colesterol, triglicéridos y bajar los niveles de azúcar.</span></p>
+        <p class="Normal P-1"><span class="C-1"><br></span></p>
+        <p class="Normal P-1"><span class="C-1">Prepárelo en un vaso de leche descremada y reemplace una comida, preferiblemente la cena.</span></p>
       </div>
       <div style="position:absolute;left:33px;top:938px;width:468px;height:26px;overflow:hidden;">
         <p class="Body P-2"><span class="C-2">Línea para información y ventas </span><span class="C-3">300 3120 </span><span class="C-2">Bogotá D.C.</span></p>
@@ -55,7 +57,8 @@ Histats.track_hits();} catch(err){};
 <noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?3296785&101" alt="contar" border="0"></a></noscript>
 <!-- Histats.com  END  -->
       </div>
-      <img alt="" src="<?= $landing_resources_url.'wpimages/wp3afb43e0_06.png'?>" style="position:absolute;left:172px;top:559px;width:190px;height:284px;">
+      <img alt="" src="<?= $landing_resources_url.'wpimages/wp3afb43e0_06.png'?>" style="position:absolute;left:172px;top:574px;width:190px;height:284px;">
+      <img alt="Tarro x 500 gr. $40.000" src="<?= $landing_resources_url.'wpimages/wp1bb93534_06.png'?>" style="position:absolute;left:356px;top:715px;width:121px;height:36px;">
     </div>
   </body>
 </html>

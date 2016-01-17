@@ -52,11 +52,12 @@ Histats.track_hits();} catch(err){};
 <noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?3275920&101" alt="contador de visitas" border="0"></a></noscript>
 <!-- Histats.com  END  -->
       </div>
-      <img alt="" src="<?= $landing_resources_url.'wpimages/wpc00c2439_06.png'?>" style="position:absolute;left:267px;top:701px;width:426px;height:187px;">
-      <img alt="" src="<?= $landing_resources_url.'wpimages/wp13a2d9c6_05_06.jpg'?>" style="position:absolute;left:494px;top:26px;width:460px;height:652px;">
-      <img alt="ENTRENADOR  PISO PÉLVICO" src="<?= $landing_resources_url.'wpimages/wpbe31e168_06.png'?>" style="position:absolute;left:32px;top:37px;width:390px;height:119px;">
-      <img alt="" src="<?= $landing_resources_url.'wpimages/wpc50037b8_06.png'?>" style="position:absolute;left:78px;top:172px;width:436px;height:302px;">
-      <div style="position:absolute;left:19px;top:464px;width:490px;height:223px;overflow:hidden;">
+      <img alt="" src="<?= $landing_resources_url.'wpimages/wpc00c2439_06.png'?>" style="position:absolute;left:57px;top:453px;width:426px;height:187px;">
+      <img alt="" src="<?= $landing_resources_url.'wpimages/wp718a32e8_05_06.jpg'?>" style="position:absolute;left:509px;top:9px;width:445px;height:631px;">
+      <img alt="" src="<?= $landing_resources_url.'wpimages/wp76d7d590_06.png'?>" style="position:absolute;left:158px;top:645px;width:404px;height:280px;">
+      <img alt="ENTRENADOR  PISO PÉLVICO" src="<?= $landing_resources_url.'wpimages/wp004398eb_06.png'?>" style="position:absolute;left:32px;top:37px;width:437px;height:131px;">
+      <img alt="$320.000 (IVA incluido)" src="<?= $landing_resources_url.'wpimages/wpf2b1faf8_06.png'?>" style="position:absolute;left:562px;top:767px;width:208px;height:36px;">
+      <div style="position:absolute;left:25px;top:195px;width:490px;height:218px;overflow:hidden;">
         <p class="Body P-2"><span class="C-3">El piso pélvico está constituido músculos ubicadas en la parte inferior de la pelvis y su función es servir como soporte de los órganos pélvicos y abdominales, jugando un papel primor</span><span class="C-3">dial en la continencia urinaria y fecal. Dichos músculos se rigen por los mismos principios que rigen el resto de músculos del cuerpo y están sujetos al deterioro por edad, cambios hormonales, embarazos y estilo de vida.</span></p>
         <p class="Body P-3"><span class="C-4">El <span class="C-5">Entrenador de piso pélvico </span>ayuda a fortalecer y tonificar los músculos pélvicos de forma sencilla y eficaz, solucionando y previniendo problemas de incontinencia urinaria, falta de tono muscular después del embarazo y problemas de disfunción sexual. </span></p>
       </div>
