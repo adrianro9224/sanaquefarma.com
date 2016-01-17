@@ -1,18 +1,18 @@
 <?php
 class Product_model extends CI_Model {
-	
+
 	function __construct()
 	{
 		// Call the Model constructor
 		parent::__construct();
 	}
-	
+
 	public function get_all() {
-		
+
 		$this->db->select('id, PLU, barcode, name, category_id, active_ingredient, presentation, stock, tax, price, discount, lab' );
-		
+
 		$query = $this->db->get('product');
-		
+
 		if( $query->num_rows() > 0 ) {
 
             $products = $query->result();
@@ -21,7 +21,7 @@ class Product_model extends CI_Model {
 
 			return $products;
 		}
-		
+
 		return NULL;
 	}
 
@@ -97,13 +97,13 @@ class Product_model extends CI_Model {
         return NULL;
 
     }
-	
+
 	public function get_by_category_id($category_id) {
-		
+
 		$this->db->where('category_id', $category_id);
         $this->db->where('stock >', 0);
 		$query = $this->db->get('product');
-		
+
 		if( $query->num_rows() > 0 ) {
 
             $products = $query->result();
@@ -112,7 +112,7 @@ class Product_model extends CI_Model {
 
 			return $products;
 		}
-		
+
 		return null;
 	}
 
@@ -131,10 +131,10 @@ class Product_model extends CI_Model {
 
         return null;
     }
-	
+
 	public function create_products_from_csv( $list_products ) {
 		$product_ids = array();
-		
+
 		$num_of_products_to_save = count($list_products);
 
 		foreach ($list_products as $product ) {
@@ -146,7 +146,7 @@ class Product_model extends CI_Model {
 					"price" => $product->price,
                     "uri_img" => "productwithoutimage",
                     "image_format_id" => ".jpg"
-					
+
 			);
 
             if ( isset($product->PLU) )
@@ -166,21 +166,21 @@ class Product_model extends CI_Model {
 
 
 			$this->db->insert("product", $data);
-			
+
 			if( $this->db->affected_rows() == 1 )
 				$product_ids[] = $this->db->insert_id();
 		}
 
-		
+
 		if ( $num_of_products_to_save == count($product_ids) )
 			return $product_ids;
 
 		return false;
-		
+
 	}
-	
+
 	public function get_by_name( $pattern_to_search ) {
-        
+
         if( strpos( $pattern_to_search, ' ' ) !== false ) {
 
             $text_exploded = explode(' ', $pattern_to_search);
@@ -193,18 +193,18 @@ class Product_model extends CI_Model {
             $num_of_chars = count_chars($pattern_to_search);
 
             if( $num_of_chars >= 3 ){
-                $part_to_search  = substr( $pattern_to_search, 0, 3);    
+                $part_to_search  = substr( $pattern_to_search, 0, 3);
             }else {
                 $part_to_search= $pattern_to_search;
             }
             $this->db->or_like('name', $part_to_search);
         }
-        
+
         $this->db->or_like('keywords', $pattern_to_search);
 
         $this->db->where('price !=', 0);
 		$query = $this->db->get('product');
-		
+
 		if( $query->num_rows() > 0 ) {
 
             $products = $query->result();
@@ -212,9 +212,9 @@ class Product_model extends CI_Model {
 
 			return $products;
 		}
-		
+
 		return NULL;
-		
+
 	}
 
     public function update_active_ingredients( $products_to_update ) {
@@ -336,18 +336,18 @@ class Product_model extends CI_Model {
             $product->joker = $product->price + (bcmul($product->price, 0.05));
         }*/
         foreach ( $products as $product ) {
-            
+
             $discount = NULL;
-            
+
             $product->has_discount = false;
 
             if( isset($product->discount) ) {
-                
+
                 $product->has_discount = true;
-                $discount = bcdiv($product->price, $product->discount);
+                //$discount = bcdiv($product->price, $product->discount);
                 $product->old_price = $product->price;
-                $product->new_price = bcsub($product->price, $discount);
-                
+                $product->new_price = bcmul($product->price, $product->discount);
+
             }
         }
     }

@@ -35,26 +35,33 @@
 	                <div id="home_product_list">
 	                    <?php if ( isset($products) ):?>
 	                    <div class="row">
-	                        <?php foreach ( $products as $product ): ?>
-	                        <div class="col-md-2">
+	                        <?php foreach ( $products as $key => $product ): ?>
+	                        <div class="col-md-2" id="columns-home">
 	                            <div class="thumbnail product-product">
 	                                <div class="caption caption-custom">
 	                                	<img src="<?= base_url() . 'assets/images/products/' . $product->uri_img . $product->image_format_id?>" class="img-responsive" alt="<?= $product->name ?>" >
 		                                <?php if( isset($product->has_discount) && $product->has_discount ): ?>
 		                                    <span class="fa-stack fa-lg">
 		                                        <i id="promotionWrapper" class="fa fa-circle"></i>
-		                                        <span id="promotionText">-10%</span>
+		                                        <span id="promotionText">-<?= bcmul($product->discount, 100) ?>%</span>
 		                                    </span>
 		                                <?php endif; ?>
 	                                    <h3><?= $product->name ?></h3>
 	                                    <p><?= $product->presentation ?></p>
 	                                    <div class="product-price">
-	                                        <!-- <span class="old-price" ng-bind="<?= $product->joker ?> | currency : '$' : 0"></span> -->
+	                                        <!-- <span class="old-price" ng-bind=" // $product->joker ?> | currency : '$' : 0"></span> -->
 	                                        <?php if( isset($product->has_discount) && $product->has_discount ): ?>
-		                                        <h4 class="secondary-emphasis" ><?= 'Antes $' . number_format($product->old_price) . ' Ahora $' . number_format($product->new_price) ?></h4>
+		                                        <h4 id="home-price" class="secondary-emphasis" ><?= 'Antes $' . number_format($product->old_price) . ' Ahora $' . number_format($product->new_price) ?></h4>
 	                                        <?php else: ?>
-	                                        	<h3 class="secondary-emphasis" ng-bind="<?= $product->price ?> | currency : '$' : 0"></h3>
+	                                        	<h3 id="home-price" class="secondary-emphasis" ng-bind="<?= $product->price ?> | currency : '$' : 0"></h3>
 	                                    	<?php endif;?>
+											<?php if( isset($product->has_discount) && !empty($product->pre_description) ): ?>
+												<p><?= $product->pre_description ?>
+													<?php if( isset($product->landing_url) && !empty($product->landing_url) ): ?>
+													<a id="landing-url-link" href="<?= base_url(). $product->landing_url ?>" ><strong>Ver más</strong></a>
+													<?php endif;?>
+												</p>
+											<?php endif;?>
 	                                    </div>
 
 	                                </div>

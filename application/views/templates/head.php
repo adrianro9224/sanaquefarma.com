@@ -1,6 +1,6 @@
 <head>
 	<meta charset="utf-8">
-	
+
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
 	</script>
@@ -10,6 +10,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="Cache-Control" content="max-age=2592000, public" />
+	<meta name="p:domain_verify" content="a1753a9dc2fd4cefa95b684c257948b7"/>
     <meta name="description" content="Tienda especializada en productos para la salud, en línea y a domicilio.">
     <meta name="keywords" content="Droguerías, Domicilios, Domicilios Bogotá, Dynoral Kids, Argel, Argel Flash, Promelight, Promelight Kids, Osteoferol, Cados, Inufib, Inufib Niños, Sucrance,  Droguerías Virtuales, Farmacias Virtuales, Droguería Virtual, Farmacia Virtual, Droguería en Línea, Farmacia en Línea, Droguería Online, Farmacia Online, Medicamentos, Medicamentos a Domicilio, sana que sana,Tienda, tienda especializada, tienda de salud, tienda en línea, productos de salud, bioplus, bio plus, probióticos">
 
@@ -26,35 +27,35 @@
 
 	<link rel="stylesheet" type="text/css" href="<?= base_url() . 'public/custom/css/extra.css'?>"><!-- minify -->
 	<!-- Custom css over -->
-	
+
 	<!-- Font awesome css start -->
 	<link rel="stylesheet" type="text/css" href="<?= base_url() . 'public/font-awesome-4.3.0/css/font-awesome.min.css'?>">
 	<!-- Font awesome css over -->
-	
+
 	<!-- Jquery start -->
 	<script type="text/javascript" src="<?= base_url() . 'public/jquery/jquery-1.11.1.min.js'?>"></script>
 
 	<!-- Jquery over -->
-	
+
 	<!-- Bootstrap js start -->
 	<script type="text/javascript" src="<?= base_url() . 'public/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js'?>"></script>
 	<!-- Bootstrap js over -->
-	
+
 	<!-- Angular js start -->
     <!--<link rel="stylesheet" type="text/css" href='public/custom/css/animations.css'?>">-->
 	<!-- Angular 1.3.2 start -->
 <!-- 	<script type="text/javascript" src="../../public/app/1.3.14/angular.min.js"></script> -->
 <!-- 	<script type="text/javascript" src="../../public/app/1.3.14/angular.min.js.map"></script> -->
 	<!-- Angular 1.3.2 over -->
-	
+
 	<!-- Angular 1.4.0 start -->
 <!-- 	<script type="text/javascript" src="../../public/app/1.4.0/angular-1.4.0-beta.5/angular.min.js"></script> -->
 <!-- 	<script type="text/javascript" src="../../public/app/1.4.0/angular-1.4.0-beta.5/angular.min.js.map"></script> -->
 	<!-- Angular 1.4.0 over -->
-	
+
 <!-- 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script> -->
 	<!-- Angular js over -->
-	
+
 	<!-- Angular js controllers start -->
 	<script type="text/javascript" src="<?= base_url() . 'public/app/controllers/CarouselCtrl.js'?>"></script>
 	<!--<script type="text/javascript" src="<?//= base_url() . 'public/app/controllers/DevicesMenuAccordionCtrl.min.js'?>"></script>-->
@@ -87,36 +88,36 @@
     <script type="text/javascript" src="<?= base_url() . 'public/app/controllers/ManageAddressesCtrl.min.js'?>"></script>
 
 	<!-- Angular js controllers over -->
-	
+
 	<!-- Angular js services start -->
 	<script type="text/javascript" src="<?= base_url() . 'public/app/services/ConstantsService.js'?>"></script>
 	<script type="text/javascript" src="<?= base_url() . 'public/app/services/UtilService.js'?>"></script>
 	<!-- Angular js services over -->
-	
+
 	<!-- UI Bootstrap dependencie js start -->
 	<script type="text/javascript" src="<?= base_url() . 'public/bootstrap-3.3.0-dist/dist/js/ui-bootstrap-tpls-0.11.2.min.js'?>"></script>
 	<!-- UI Bootstrap dependencie js over -->
-	
+
 	<!-- ngCookies dependencie start -->
 	<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script> -->
-	
+
 	<!-- Angular 1.4.0 snapshot start -->
 		<script type="text/javascript" src="<?= base_url() . 'public/app/snapshot/angular-cookies.min.js'?>"></script>
 		<script type="text/javascript" src="<?= base_url() . 'public/app/snapshot/angular-cookies.min.js.map'?>"></script>
 	<!-- Angular 1.4.0 snapshot over -->
-	
+
 	<!-- Angular 1.4.0 start -->
 <!-- 	<script type="text/javascript" src="../../public/app/1.4.0/angular-1.4.0-beta.5/angular-cookies.min.js"></script> -->
 <!-- 	<script type="text/javascript" src="../../public/app/1.4.0/angular-1.4.0-beta.5/angular-cookies.min.js.map"></script> -->
 	<!-- Angular 1.4.0 over -->
-	
+
 	<!-- Angular 1.3.2 start -->
 <!-- 	<script type="text/javascript" src="../../public/app/1.3.14/angular-cookies.min.js"></script> -->
 <!-- 	<script type="text/javascript" src="../../public/app/1.3.14/angular-cookies.min.js.map"></script> -->
 	<!-- Angular 1.3.2 over -->
-	
+
 	<!-- ngCookies dependencie over -->
-	
+
 	<!-- Facebook SDK -->
 	<!-- <script type="text/javascript" src="base_url() . '/public/facebook-sdk/facebook_sdk.js'?>"></script>  -->
 

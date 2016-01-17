@@ -2,7 +2,7 @@
 
 
 /**
-* Font config start 
+* Font config start
 */
 /*
 @font-face {
@@ -18,7 +18,7 @@ div , body, html{
 
 
 /*
-* Font config over 
+* Font config over
 */
 
 /*
@@ -30,14 +30,14 @@ div , body, html{
 }
 
 span.glyphicon {
-	color: #00AFEF;	
+	color: #00AFEF;
 }
 
 #sales-creator span {
-	color: #00AFEF;	
+	color: #00AFEF;
 }
 i.fa {
-	color: #00AFEF;		
+	color: #00AFEF;
 }
 
 /* Buttons */
@@ -70,7 +70,7 @@ a#button-payment.btn-primary {
     width: 86%;
 }
 
-#search-module>input {	
+#search-module>input {
 	border-radius: 5px;
 	border: 1px solid #00AFEF;
 }
@@ -86,7 +86,7 @@ a#button-payment.btn-primary {
 #left_sidebar #categories_panel #left-sidebar-categories-list {
 	max-height: 675px;
 	overflow: auto;
-	
+
 }
 
 #header-nav {
@@ -121,7 +121,7 @@ a#button-payment.btn-primary {
 .nav>li>div>a{
 	position: relative;
 	display: block;
-	text-decoration: none;	
+	text-decoration: none;
 }
 #primary-nav .nav>li>a{
 	padding: 10px 20px;
@@ -184,7 +184,7 @@ a#button-payment.btn-primary {
 	#header-nav {
 		height: auto;
 	}
-	 	
+
 	#header-nav.container-fluid {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
@@ -323,10 +323,10 @@ span.caret {
 /**
 * error banner styles start
 */
-#errors p.bg-primary, 
-#errors p.bg-success, 
-#errors p.bg-info, 
-#errors p.bg-warning, 
+#errors p.bg-primary,
+#errors p.bg-success,
+#errors p.bg-info,
+#errors p.bg-warning,
 #errors p.bg-danger  {
 	font-size: 14px;
 	padding: 15px;
@@ -367,7 +367,7 @@ button.close {
 * pagination list over
 */
 
-/* 
+/*
 * General styles start
 */
 
@@ -401,7 +401,7 @@ a , .link {
 	color: #777 !important;
 }
 
-a , .emphasis, span {	
+a , .emphasis, span {
 	color: #D7FE00;
 }
 
@@ -430,13 +430,13 @@ a , .emphasis, span {
 }
 
 .btn {
-	border-radius: 0; 
+	border-radius: 0;
 }
 
 button.btn.btn-default, a.btn.btn-default {
 	/*color: #FFFFFF;*/
 	color: #ED2F59;
-	
+
 }
 
 .btn-group.btn-group-justified button.btn.btn-default {
@@ -493,7 +493,7 @@ input.form-control {
 	border-color: rgba(0,0,0,0.1);
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
-	
+
 }
 
 #checkout-panel-content #payment-method-accordion .panel.panel-default{
@@ -501,7 +501,7 @@ input.form-control {
 }
 
 #checkout-panel-content #payment-method-accordion .panel.panel-default .panel-body payment-method-description span {
-	
+
 }
 
 
@@ -515,14 +515,14 @@ input.form-control {
 
 #checkout-panel-content-views #order-summary #order-totals.panel {
 	border-radius: 0 0 4px 4px;
-	
+
 	border-top:2px solid #DDD;
 	border-right:none;
 	border-bottom:none;
 	border-left:none;
-	
+
 }
- 
+
 #shopping-cart-panel ul {
 	padding: 0 5px;
 }
@@ -577,16 +577,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary:hover,
-.btn-primary:focus, 
-.btn-primary.focus, 
-.btn-primary:active, 
-.btn-primary.active, 
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
 .open>.dropdown-toggle.btn-primary {
 	background-color: #00AFEF;
 	color: #FFF !important;
-	border-color: #D7FE00; 
-	
-	
+	border-color: #D7FE00;
+
+
 }
 
 
@@ -601,7 +601,7 @@ button.btn-danger:hover, button.btn-danger:focus {
 .btn-danger:hover, .btn-danger:focus, .btn-danger.active {
 	background-color: #00AFEF;
 	border: 2px solid #D7FE00 !important;
-} 
+}
 
 #product_list #product_listing .btn, form .btn {
 	border: 1px solid rgba(0,0,0,0.125);
@@ -650,7 +650,7 @@ p.bg-primary, p.bg-warning, p.bg-info {
 }
 
 .message-title {
-	padding: 10px;	
+	padding: 10px;
 }
 
 section #my-account .panel.panel-default .panel-heading span, section#checkout-panel-content .panel.panel-default .panel-heading span {
@@ -732,7 +732,7 @@ section #my-account .panel.panel-default {
 	font-size: 13px;
 }
 .order-summary-item .order-summary-item-content>span.title {
-	font-size: 17px;	
+	font-size: 17px;
 }
 
 #confirm-order-button, #go-to-orders-button {
@@ -800,26 +800,26 @@ section#shopping-cart-panel .shopping-cart-item-content span.title {
 	width: 62px;
 }
 
-.btn-primary.disabled, 
-.btn-primary[disabled], 
-fieldset[disabled] 
-.btn-primary, 
-.btn-primary.disabled:hover, 
-.btn-primary[disabled]:hover, 
-fieldset[disabled] .btn-primary:hover, 
-.btn-primary.disabled:focus, 
-.btn-primary[disabled]:focus, 
-fieldset[disabled] .btn-primary:focus, 
-.btn-primary.disabled.focus, 
-.btn-primary[disabled].focus, 
-fieldset[disabled] .btn-primary.focus, 
-.btn-primary.disabled:active, 
-.btn-primary[disabled]:active, 
-fieldset[disabled] .btn-primary:active, 
-.btn-primary.disabled.active, 
-.btn-primary[disabled].active, 
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled]
+.btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-	
+
 	background-color: #00AFEF;
 	border: 2px solid #D7FE00;
 }
@@ -833,7 +833,7 @@ fieldset[disabled] .btn-primary.active {
 	background-color: #E5E5E5;
 	padding: 10px;
 	border-radius: 4px;
-	margin-bottom: 15px;	
+	margin-bottom: 15px;
 }
 
 #open-message-button {
@@ -852,7 +852,7 @@ fieldset[disabled] .btn-primary.active {
 	margin-bottom:15px;
 }
 
-/* 
+/*
 * General styles over
 */
 
@@ -869,7 +869,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .farma-tooltip-error span, .farma-tooltip-info span {
-	color: #FFF;	
+	color: #FFF;
 }
 
 .farma-tooltip-error {
@@ -882,8 +882,8 @@ fieldset[disabled] .btn-primary.active {
 .arrow-up-error {
 	left: 18%;
 	position: relative;
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-bottom: 5px solid #CF1020;
@@ -902,8 +902,8 @@ fieldset[disabled] .btn-primary.active {
 .arrow-up-info {
 	left: 48%;
 	position: relative;
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-bottom: 5px solid #5BC0DE;
@@ -958,16 +958,16 @@ fieldset[disabled] .btn-primary.active {
 	padding: 5px 12px;
 }
 
-#home_product_list .product-product .product-price, 
-#home_product_list .product-product .caption-custom>h3, 
+#home_product_list .product-product .product-price,
+#home_product_list .product-product .caption-custom>h3,
 #home_product_list .product-product .caption-custom>p,
 #footer>footer .row .col-md-12 {
     text-align: center;
 }
 
-#home_product_list .product-product a{
+#home_product_list .product-product a.btn{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
     font-weight: bold;
     font-size: 16px;
     border-radius: 10px;
@@ -975,9 +975,14 @@ fieldset[disabled] .btn-primary.active {
     color: #00AFEF;
 }
 
-#home_product_list .product-product a:hover {
-	border: 2px solid #FFF;	
-	color: #00AFEF !important;	
+#home_product_list .product-product a.btn:hover {
+	border: 2px solid #FFF;
+	color: #00AFEF !important;
+}
+
+#landing-url-link{
+    color: #00AFEF !important;
+    text-decoration: none;
 }
 
 .product-product .product-price .old-price {
@@ -1038,7 +1043,7 @@ footer .footer-content {
 	border-top: #00AFEF 1px dashed;
 	padding: 2% 0;
 	display: block;
-	min-height: 100px; 
+	min-height: 100px;
 }
 
 footer p.contact-desc {
@@ -1111,7 +1116,7 @@ ICONS START
 	background-color:#ebebeb;
 	text-align:center;
 	color:#555555;
-	display:inline-block;	
+	display:inline-block;
 	font-size:20px;
 	padding-top: 11px;
 	width:50px;
@@ -1270,9 +1275,9 @@ ICONS START
 }
 
 .brands-justified.brands-rounded.brands-tn > li > a,
-.brands-justified.brands-rounded.brands-sm > li > a, 
-.brands-justified.brands-rounded.brands-md > li > a, 
-.brands-justified.brands-rounded > li > a, 
+.brands-justified.brands-rounded.brands-sm > li > a,
+.brands-justified.brands-rounded.brands-md > li > a,
+.brands-justified.brands-rounded > li > a,
 .brands-justified.brands-rounded.brands-lg > li > a,
 .brands-justified.brands-rounded.brands-hg > li > a,
 .brands-justified.brands-circle > li > a {
@@ -1393,7 +1398,7 @@ ICONS START
 
 @media (max-width:767px) {
 	.brands > li > a {color:#ffffff;}
-	
+
 	.brands > li > a.brands-adn {background-color:#444444;}
 	.brands > li > a.brands-android {background-color:#A4C639;}
 	.brands > li > a.brands-apple {background-color:#000000;}
@@ -1428,7 +1433,7 @@ ICONS START
 	.brands > li > a.brands-windows {background-color:#00ADEF;}
 	.brands > li > a.brands-xing {background-color:#005A5F;}
 	.brands > li > a.brands-youtube {background-color:#FF3333;}
-	
+
 	.brands-spin > li > a:hover i {
 		animation:none;
 		-webkit-animation: none;
@@ -1693,7 +1698,7 @@ a:hover.promelite-button {
 }
 
 .thumbnail {
-    min-height: 380px;
+    min-height: 450px;
     background-color: #00AFEF;
     border-radius: 25px;
 }
@@ -1844,7 +1849,7 @@ a:hover.pathology-btn {
 	background-color: #00AFEF;
 	color: #FFF;
 	border-radius: 5px;
-	
+
 	padding: 5px 12px;
     font-size: 16px;
 }
@@ -1863,6 +1868,7 @@ a:hover.pathology-btn {
     margin-left: auto;
 }
 .thumbnail .caption-custom {
+    min-height: 370px;
     background-color: #FFF;
     border-radius: 21px 21px 0 0;
 }
@@ -1872,4 +1878,16 @@ a:hover.pathology-btn {
 
 .container-container#home-products-container {
 	background-color: #D0E8E8;
+}
+
+/*home comuns config*/
+
+@media (min-width: 992px){
+    #columns-home.col-md-2 {
+        width: 20% !important;
+    }
+}
+
+#home-price {
+    margin-bottom: 10px;
 }
