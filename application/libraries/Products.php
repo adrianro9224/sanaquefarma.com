@@ -11,7 +11,7 @@ Class Products {
 
 		$first_products_ids = array( '2', '56346', '56345','5', '43289'
 									,'6', '3','9', '1', '56344'
-								 	,'7', '8', '43292', '56347', '56348'
+								 	,'7', '8', '56347', '56348'
 									,'56349');
 
         $products = $CI->product_model->get_by_product_ids( $first_products_ids );
@@ -67,9 +67,6 @@ Class Products {
                 }
 				if ( $product->id == $first_products_ids[14] ) {
                     $first_products[14] = $product;
-                }
-				if ( $product->id == $first_products_ids[15] ) {
-                    $first_products[15] = $product;
                 }
 
             }

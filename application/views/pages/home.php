@@ -55,6 +55,9 @@
 	                                        <?php else: ?>
 	                                        	<h3 id="home-price" class="secondary-emphasis" ng-bind="<?= $product->price ?> | currency : '$' : 0"></h3>
 	                                    	<?php endif;?>
+											<?php if ( $product->tax ): ?>
+												<p><?= '(IVA incluído)' ?></p>
+											<?php endif; ?>
 											<?php if( isset($product->has_discount) && !empty($product->pre_description) ): ?>
 												<p><?= $product->pre_description ?>
 													<?php if( isset($product->landing_url) && !empty($product->landing_url) ): ?>

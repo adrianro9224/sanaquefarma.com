@@ -1669,6 +1669,26 @@ a:hover.bioplus-button {
     border: 2px solid #FFF;
 }
 
+.register-slide-button {
+    background-color: #D7FE00;
+    padding: 0px 51px;
+    text-decoration: none;
+    color: #00AFEF;
+    /* font-weight: bold; */
+    font-size: 2.5em;
+    position: absolute;
+    top: 78.5%;
+    right: 40.1%;
+    border-radius: 13px;
+    /* border: 2px solid #FFF; */
+}
+
+.register-slide-button:hover{
+     border: 2px solid #FFF;
+     text-decoration: none;
+}
+
+
 a:hover.dynoral-button {
     text-decoration: none;
     border: 2px solid #484848;
