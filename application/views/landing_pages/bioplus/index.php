@@ -27,7 +27,7 @@
       .OBJ-1 span,.OBJ-1:link span,.OBJ-1:visited span { color:#ffffff;font-family:Arial,sans-serif;font-weight:bold;text-decoration:none;text-align:center;text-transform:none;font-style:normal;left:6px;top:16px;width:175px;height:25px;font-size:19px;display:block;position:absolute;cursor:pointer; }
       .OBJ-1.Disabled span,a:link.OBJ-1.Disabled span,a:visited.OBJ-1.Disabled span,a:hover.OBJ-1.Disabled span,a:active.OBJ-1.Disabled span { top:15px; }
     </style>
-    <script type="text/javascript" src="wpscripts/jquery.js"></script>
+    <script type="text/javascript" src="<?= $landing_resources_url.'wpscripts/jquery.js'?>"></script>
     <script type="text/javascript">
       $(document).ready(function() {
       $("a.ActiveButton").bind({ mousedown:function(){if ( $(this).attr('disabled') === undefined ) $(this).addClass('Activated');}, mouseleave:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}, mouseup:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}});
