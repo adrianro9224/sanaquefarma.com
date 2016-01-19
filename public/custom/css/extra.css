@@ -1718,8 +1718,8 @@ a:hover.promelite-button {
 }
 
 .thumbnail {
-    min-height: 470px;
-    max-height: 470px;
+    min-height: 500px;
+    max-height: 500px;
     background-color: #00AFEF;
     border-radius: 25px;
 }

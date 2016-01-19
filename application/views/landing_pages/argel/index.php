@@ -54,7 +54,7 @@ Histats.track_hits();} catch(err){};
 <noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?3310513&101" alt="contador de visitas" border="0"></a></noscript>
 <!-- Histats.com  END  -->
       </div>
-      <div style="position:absolute;left:554px;top:266px;width:353px;height:185px;overflow:hidden;">
+      <div style="position:absolute;left:554px;top:266px;width:353px;height:190px;overflow:hidden;">
         <p class="Normal P-2"><span class="C-3">Argel Flash es un alimento a base de Péptidos de Colágeno Hidrolizado que contiene prolina, lisina y glicina, tres aminoácidos que estimulan a las células del cartílago a regenerar de nuevo el cartílago de la articulación, mejorando la movilidad y disminuyendo el dolor en pacientes con artrosis.</span></p>
       </div>
     </div>
