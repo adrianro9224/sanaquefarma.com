@@ -37,7 +37,7 @@
   <body style="height:1000px;background:#ffffff;">
     <div id="divMain" style="background:transparent;margin-left:auto;margin-right:auto;position:relative;width:960px;height:1000px;">
       <img alt="" src="<?= $landing_resources_url.'wpimages/wp41268ac6_06.png'?>" style="position:absolute;left:451px;top:18px;width:426px;height:250px;">
-      <img alt="" src="<?= $landing_resources_url.'wpimages/wp6d41c3ff_05_06.jpg'?>" style="position:absolute;left:488px;top:689px;width:214px;height:193px;">
+      <img alt="" src="<?= $landing_resources_url.'wpimages/wp20ea5d23_05_06.jpg'?>" style="position:absolute;left:488px;top:689px;width:214px;height:193px;">
       <img alt="Caja x 20 sobres $35.000" src="<?= $landing_resources_url.'wpimages/wpeb411e31_06.png'?>" style="position:absolute;left:757px;top:768px;width:121px;height:36px;">
       <img alt="" src="<?= $landing_resources_url.'wpimages/wpfbffb6bb_06.png'?>" style="position:absolute;left:0px;top:0px;width:453px;height:998px;">
       <div style="position:absolute;left:457px;top:961px;width:473px;height:26px;overflow:hidden;">
@@ -61,7 +61,7 @@ Histats.track_hits();} catch(err){};
 </script></a>
 <noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?3310407&101" alt="contadores visitas" border="0"></a></noscript>
 <!-- Histats.com  END  -->
-      </div>
+      </div><object type="audio/mpeg" classid="CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95" codebase="http://www.microsoft.com/Windows/MediaPlayer/" class="" style="position:absolute;left:760px;top:33px;width:182px;height:36px;"><param name="filename" value="<?= $landing_resources_url.'dynoral.mp3'?>"><param name="autostart" value="true"><param name="showcontrols" value="true"><param name="loop" value="false"><param name="standby" value="Loading Player..."><param name="animationatstart" value="true"><param name="transparentatstart" value="true"><embed src="<?= $landing_resources_url.'dynoral.mp3'?>" type="audio/mpeg" autostart="true" showcontrols="true" loop="false" pluginspage="http://microsoft.com/windows/mediaplayer/en/download/" displaysize="4" autosize="-1" showtracker="-1" showdisplay="0" showstatusbar="-1" videoborder3d="-1" designtimesp="5311" class="" width="182" height="36"></object><img alt="" src="<?= $landing_resources_url.'wpimages/wpe139741e_06.png'?>" style="position:absolute;left:750px;top:21px;width:201px;height:58px;">
     </div>
   </body>
 </html>
