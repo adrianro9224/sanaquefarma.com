@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="farmapp">
 <?php include_once(__ROOT__TEMPLATES__ . 'head.php');?>
-
+<script>
+/*$("#PopupSignupForm_0 input	.button").submit(function(event) {
+	object.addEventListener("click", myScript);
+});*/
+// document.getElementById('PopupSignupForm_0').onclick = function(event) {
+// 	console.log(event);
+// alert("aaaaaa");
+// }
+</script>
 <body ng-controller="MainCtrl">
 	<div id="wrapper">
 		<!-- Header start -->
 		<section id="header">
 			<section id="header-top" class="container-fluid">
 				<?php include_once( __ROOT__TEMPLATES__ . 'header-top.php');?>
+
+				<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+				<script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"37037e620c10549a355f9122e","lid":"40cf74b154"}) })</script>
 			</section>
 			<section id="header-nav" class="">
 				<?php include_once( __ROOT__TEMPLATES__ . 'header-nav.php');?>
 			</section>
+			<!-- mailchimp -->
+
 		</section>
 		<!-- Header over -->
 		<!-- Errors start -->
@@ -23,7 +36,6 @@
 			</div>
 		</div>
 		<!-- Errors over -->
-
 		<!-- Content start -->
 		<section id="carousel" class="hidden-xs">
 			<?php include_once( __ROOT__TEMPLATES__ . 'carousel.php');?>

@@ -11,7 +11,7 @@ class Landing extends MY_controller {
 
     public function index( $landing_page = NULL ) {
 
-    	$landing_pages = array('bioplus', 'entrenador', 'sucrance', 'promelite', 'argel', 'dynoral', 'inufib', 'osteoferol', 'cados', 'prevescar', 'nitrozin');
+    	$landing_pages = array('bioplus', 'entrenador', 'sucrance', 'promelite', 'argel', 'dynoral', 'inufib', 'osteoferol', 'cados', 'prevescar', 'nitrozin', 'kelosil');
 
     	if( isset($landing_page) && in_array($landing_page, $landing_pages) ) {
     		$data = array();
