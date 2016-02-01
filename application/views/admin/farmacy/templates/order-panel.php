@@ -4,34 +4,17 @@
 			<!-- Default panel contents -->
 			<div class="panel-heading"><h3>Orden: <?= $order->orderid?> <i class="fa fa-times-circle-o pull-right handy" ng-click="closeOrderDetails( '<?= $order->orderid?>' )" ></i></h3></div>
 			<div class="panel-body">
-                <p><strong>Código farmacia de origen:</strong>
-                    <?php if ( isset($order->nearby_id) ):?>
-                        <?= $order->nearby_id?>
-                        <?php switch( $order->nearby_id ):
-                             case'0':?>
-                                <em>Galerias</em>
-                            <?php break;?>
-                            <?php case'1':?>
-                                <em>Campín</em>
-                            <?php break;?>
-                            <?php case'2':?>
-                                <em>Porciúncula</em>
-                            <?php break;?>
-                            <?php case'3':?>
-                                <em>Andes</em>
-                            <?php break;?>
-                            <?php case'4':?>
-                                <em>Castellana</em>
-                            <?php break;?>
-                        <?php endswitch;?>
-                    <?php else:?>
-                        <em>Orden sin nerby_id</em>
+                <p><strong>Usó de bono por suscripción?:</strong>
+                    <?php if ( isset($order->has_suscription) ):?>
+                        <em>Sí</em>
+					<?php else: ?>
+						<em>No</em>
                     <?php endif;?>
                 </p>
                 <p><strong>Método de pago:</strong>
                     <?php if ( isset($order->payment_method_id) ):?>
                         <?php switch( $order->payment_method_id ):
-                            case'3':?>
+                            case'1':?>
                                 <em>Efectivo</em>
                                 <?php break;?>
                             <?php case'4':?>
@@ -45,16 +28,21 @@
                         <em>Orden sin nerby_id</em>
                     <?php endif;?>
                 </p>
-				<p><strong>Notas:</strong> 
+				<p><strong>Notas:</strong>
 					<?php if ( isset($order->note) ):?>
 					<?= $order->note?>
 					<?php else:?>
 					<em>Sin notas</em>
 					<?php endif;?>
 				</p>
-				<p><strong>Destinatario:</strong> 
+				<p><strong>Destinatario:</strong>
 					<?= $order->names . ' ' . $order->last_names?>
 				</p>
+				<p><strong>Número de identificación:</strong>
+
+                    <?= $order->identification_number ?>
+
+                </p>
                 <p><strong>Teléfono:</strong>
                     <?= $order->phone?>
                 </p>
@@ -103,7 +91,7 @@
 				<?php endforeach;?>
 				</tbody>
 			</table>
-		</div>			
+		</div>
 	<?php endforeach;?>
 	<hr>
 	<table class="table table-bordered">
