@@ -4,6 +4,15 @@ farmapp.controller('suscriptionCtrl', ['$scope', '$modal', '$log', '$http', '$ro
 
     $scope.animationsEnabled = true;
 
+    angular.element(document).ready(function(){
+        var currentUrl = window.location.href;
+        if ( currentUrl == "http://sanaquefarma.com/" ){
+            $scope.open('md');
+        }
+    });
+
+
+
     $scope.open = function (size) {
 
         var modalInstance = $modal.open({

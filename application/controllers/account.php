@@ -624,6 +624,10 @@ class Account extends MY_Controller {
 			//has_suscription null no have, 0 == no used, 1 used
 			if ( isset($account->has_suscription) && ($account->has_suscription == 1 || $account->has_suscription == 0 ) ){
 				$result->status = "HAS_SUSCRIPTION";
+			}else {
+				$this->account_model->update_suscription_status( $account->id, 0 );
+				$result->status = "SUSCRITED";
+				$this->mandrill_lib->send_suscription_email( $account );
 			}
 		}else {
 			$result->status = "SUSCRITED";

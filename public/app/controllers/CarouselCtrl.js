@@ -20,7 +20,7 @@ farmapp.controller('CarouselCtrl', ['$scope', function($scope) {
             text : ['Comprar', 'Comprar', 'Comprar'][slides.length % 3]
         });
     };
-    for (var i=0; i<=3; i++) {
+    for (var i=0; i<=2; i++) {
 
         //if ( i != 2 )
             $scope.addSlide(i);
