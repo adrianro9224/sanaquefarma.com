@@ -15,9 +15,9 @@ farmapp.controller('CarouselCtrl', ['$scope', function($scope) {
                 format = '.png';*/
         slides.push({
             image: 'http://sanaquefarma.com/assets/images/slides/' + i + format,
-            button: ['http://sanaquefarma.com/account#sign-up-form','http://sanaquefarma.com/product/show_product_by_id/2','http://sanaquefarma.com/product/show_product_by_id/56345','http://sanaquefarma.com/product/show_product_by_id/56346'][slides.length % 4],
-            class : ['register-slide-button','dynoral-button', 'bioplus-button', 'promelite-button'][slides.length % 4],
-            text : ['Regístrate Ahora','Comprar', 'Comprar', 'Comprar'][slides.length % 4]
+            button: ['http://sanaquefarma.com/product/show_product_by_id/2','http://sanaquefarma.com/product/show_product_by_id/56345','http://sanaquefarma.com/product/show_product_by_id/56346'][slides.length % 3],
+            class : ['dynoral-button', 'bioplus-button', 'promelite-button'][slides.length % 3],
+            text : ['Comprar', 'Comprar', 'Comprar'][slides.length % 3]
         });
     };
     for (var i=0; i<=3; i++) {
