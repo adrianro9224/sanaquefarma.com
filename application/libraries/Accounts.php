@@ -2,18 +2,18 @@
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Accounts {
-	
+
 	public function get_pathologies( $account_id ) {
 		$CI =& get_instance();
-		
+
 		$CI->load->model("account_model");
-		
+
 		$pathologies = $CI->account_model->get_pathologies_by_id( $account_id );
-		
+
 		return $pathologies;
-		
+
 	}
-	
+
 	public function generate_pathologies_dropdown_items_ids( $categories_pathologies ) {
 		$ids = array();
 		if( isset($categories_pathologies) ) {
@@ -57,6 +57,17 @@ class Accounts {
 
     }
 
+	public function redeem_bono( $valueDoRedeem, $account_id ) {
+
+        $CI =& get_instance();
+        $CI->load->model("account_model");
+
+        $result = $CI->account_model->update_suscription_status( $account_id, 1 );
+
+        return $result;
+
+    }
+
     public function search_account_by_identification_number( $identification_number_to_search ) {
 
         $CI =& get_instance();
@@ -67,5 +78,16 @@ class Accounts {
         return $account;
 
     }
-	
+
+	public function search_account_by_id( $id ) {
+
+        $CI =& get_instance();
+        $CI->load->model("account_model");
+
+        $account = $CI->account_model->get_account_by_id( $id );
+
+        return $account;
+
+    }
+
 }

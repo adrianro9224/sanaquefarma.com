@@ -1,15 +1,26 @@
 /**
  * Created by adrian on 21/05/15.
  */
-farmapp.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
+farmapp.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items, $rootScope) {
 
-    $scope.items = items;
-    $scope.selected = {
-        item: $scope.items[0]
-    };
+    $scope.suscritedSucces = items[0];
+    $scope.hasSuscription = items[1];
 
-    $scope.ok = function () {
-        $modalInstance.close($scope.selected.item);
+    // $rootScope.$on('test', function( event, data ){
+    //
+    //     switch (data.status) {
+    //         case 'SUSCRITED':
+    //             $scope.suscritedSucces = true;
+    //         break;
+    //         case 'HAS_SUSCRIPTION':
+    //             $scope.hasSuscription = true;
+    //         break;
+    //
+    //     }
+    // });
+
+    $scope.ok = function ( data ) {
+        $modalInstance.close( data );
     };
 
     $scope.cancel = function () {

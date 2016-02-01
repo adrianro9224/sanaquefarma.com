@@ -2,7 +2,7 @@
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Checkout extends MY_Controller {
-	
+
 	/**
 	 * Call to CI_controller constructor
 	 */
@@ -11,35 +11,35 @@ class Checkout extends MY_Controller {
 		$this->load->library( array('addresses', 'orders', 'account_types', 'accounts', 'mandrill_lib') );
 		$this->load->model("Payment_method_model");
 	}
-	
-	
+
+
 	public function index( $page = 'checkout' ) {
-		
+
 		$data['title'] = ucfirst($page); // Capitalize the first letter
-		
+
 		$data['notifications'] = $this->session->flashdata('notifications');
-		
+
 		$data['user_logged'] = false;
-		
-		
+
+
 		$breadcrumb = new stdClass();
-		
+
 		$breadcrumb->title = "Resumen de compra";
-		
+
 		$breadcrumb_item = new stdClass();
-		
+
 		$breadcrumb_item->name = "Resumen de compra";
 		$breadcrumb_item->url = "/product/show_products_by_category/category_1";
 		$breadcrumb_item->active = true;
-		
+
 		$breadcrumb_list['ckeckout'] = $breadcrumb_item;
-		
+
 		$breadcrumb->items = $breadcrumb_list;
-		
+
 		$data['breadcrumb'] = $breadcrumb;
-		
+
 		$session_data = $this->session->all_userdata();
-			
+
 		if( !isset($session_data['account_types']) ) {
 			$account_types = $this->account_types->get_account_types();
 			$this->session->set_userdata('account_types', $account_types);
@@ -47,17 +47,17 @@ class Checkout extends MY_Controller {
 			$account_types = $session_data['account_types'];
 			$data['account_types'] = $session_data['account_types'];
 		}
-		
+
 		$categories = $this->get_categories();
         $active_ingredients = $this->get_active_ingredients();
 
         $data['active_ingredients'] = $active_ingredients;
 		$data['categories'] = $categories;
 		$data['shoppingcart'] = null;
-		
+
 		if( isset($session_data[$account_types[1] . '_id']) ){
 			$data['user_logged'] = true;
-			
+
 			//$address = $this->addresses->get_sign_up_address( $session_data[$account_types[1]. '_id'] ); all addresses are called from angular controller
 
 			$account_data = $this->get_account($session_data[$account_types[1] . '_id']);
@@ -68,7 +68,7 @@ class Checkout extends MY_Controller {
                 $data['points'] = $account_data->points;
 
 			$payment_methods = $this->Payment_method_model->get_enabled_payment_methods();
-			
+
 			if ( isset($payment_methods) )
             $data['payment_methods'] = $payment_methods;
 
@@ -78,19 +78,19 @@ class Checkout extends MY_Controller {
 
             if( isset($shipping_data) )
                 $data['shipping_data'] = $shipping_data;
-					
+
 			//create else with info for complete the account info
-			
+
 		}else {
 			$notifications['info'][] = "Por favor regístrate ó inicia sesión para continuar con tu compra";
 			$this->session->set_flashdata('notifications', $notifications);
 			redirect("/account");
 		}
-		
-		
+
+
 		$this->load->view("pages/" . $page, $data);
 	}
-	
+
 	private function _check_if_shipping_data_completed( $account_data ) {
 
         $shipping_data = null;
@@ -122,18 +122,18 @@ class Checkout extends MY_Controller {
 
 		return $shipping_data;
 	}
-	
-	
+
+
 	public function create_order() {
 		//add sleep
 		$post = file_get_contents("php://input");
-		
+
 		$order = json_decode( $post );
 		$format = 'Y-m-d H:i:s';
 		$order->data->date = date($format, strtotime($order->data->date));
 
 		$session_data = $this->session->all_userdata();
-		
+
 		if( !isset($session_data['account_types']) ) {
 			$account_types = $this->account_types->get_account_types();
 			$this->session->set_userdata('account_types', $account_types);
@@ -141,18 +141,22 @@ class Checkout extends MY_Controller {
 			$account_types = $session_data['account_types'];
 			$data['account_types'] = $session_data['account_types'];
 		}
-		
+
 		if ( isset($session_data[$account_types[1] . '_id']) || isset($session_data[$account_types[2] . '_id']) ) {
-			
+
 			$account_id = NULL;
-			
+
 			if ( isset($session_data[$account_types[1] . '_id']) )
 				$account_id = $session_data[$account_types[1] . '_id'];
-			
+
 			if ( isset($session_data[$account_types[2] . '_id']) )
 				$account_id = $session_data[$account_types[2] . '_id'];
-			
+
 			$result = $this->orders->save_order( $order->data, $account_id );
+
+			if ( $order->data->shoppingcart->hasBono ) {
+				$bono_redeemed = $this->accounts->redeem_bono($order->data->shoppingcart->bonoDoDiscount, $account_id);
+			}
 
             //redeem points
             if ( $order->data->shoppingcart->hasDiscount ) {
@@ -186,11 +190,11 @@ class Checkout extends MY_Controller {
                 }
             }
 
-		} else 
+		} else
 			redirect('/account');
-		
-		
+
+
 	}
-	
-	
+
+
 }

@@ -113,7 +113,7 @@ farmapp.controller('CheckoutPanelCtrl', ['$scope', '$rootScope', '$log', '$cooki
                 var order = newOrder;
 
                 order.date = UtilService.getDateMySql();
-               
+
                 order.from = 'WEB';
 
                 order.points = order.shoppingcart.subtotal * ConstantsService.POINTS_BASE;
@@ -226,6 +226,26 @@ farmapp.controller('CheckoutPanelCtrl', ['$scope', '$rootScope', '$log', '$cooki
         }else {
             $scope.order.shoppingcart.pointsDoDiscount = pointsToUse;
             $scope.order.shoppingcart.hasDiscount = true;
+        }
+
+        $rootScope.$broadcast( ConstantsService.SHOPPINGCART_CHANGED, $scope.order.shoppingcart );
+    };
+
+    $scope.reedemBono = function( value ) {
+
+        var valueInt = parseInt(value);
+
+
+        var valueToUse = valueInt;
+
+        if ( $scope.order.shoppingcart.hasBono ) {
+
+            $scope.order.shoppingcart.hasBono = false;
+            $scope.order.shoppingcart.subtotal += valueToUse;
+
+        }else {
+            $scope.order.shoppingcart.bonoDoDiscount = valueToUse;
+            $scope.order.shoppingcart.hasBono = true;
         }
 
         $rootScope.$broadcast( ConstantsService.SHOPPINGCART_CHANGED, $scope.order.shoppingcart );

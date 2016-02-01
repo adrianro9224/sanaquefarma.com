@@ -14,6 +14,13 @@
                 </label>
             </div>
             <?php endif; ?>
+			<?php if ( isset($user_logged_account->has_suscription) && $user_logged_account->has_suscription == '0' ): ?>
+	            <div class="checkbox">
+	                <label>
+	                    <input type="checkbox" ng-checked="order.shoppingcart.hasBono" ng-change="reedemBono( '10000' )" ng-model="BonoToReedem" ng-value="<?= '10000'?>"> Tienes un bono por $10.000, haz click en el recuadro para usarlos como un descuento en tu compra
+	                </label>
+	            </div>
+            <?php endif; ?>
             <!-- Use points -->
 			<div class="table-responsive">
 				<table class="table table-hover table-striped">

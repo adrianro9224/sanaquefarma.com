@@ -5,16 +5,16 @@ class Account_model extends CI_Model {
 		// Call the Model constructor
 		parent::__construct();
 	}
-	
+
 	/**
 	 * Create a new register on the account table of type Account
 	 * @param Array $sign_up_form
 	 * @return boolean
 	 */
-	public function insert_account($sign_up_form) {
-		
+	public function insert_account($sign_up_form, $ghost_account = false, $add_suscription = false) {
+
 		$date_format = 'Y-m-d H:i:s'; //(the MySQL DATETIME format)
-		
+
 		$data = array(
 				'first_name' => $sign_up_form['userFirstName'],
 				'last_name' => $sign_up_form['userLastName'],
@@ -23,22 +23,30 @@ class Account_model extends CI_Model {
 				'registration_date' => date($date_format),
 				'password' => $sign_up_form['userPassword'],
                 'points' => 1000
-				
-									
+
+
 		);
-		
+
+		if ( $ghost_account ) {
+			$data['is_ghost'] = 1;
+		}
+
+		if ( $add_suscription ) {
+			$data['has_suscription'] = 0;
+		}
+
 		$this->db->insert('account', $data);
-		
+
 		if($this->db->affected_rows() > 0) {
 			return $this->db->insert_id();
 		}
-		
+
 		return NULL;
-		
+
 	}
-	
-	public function update_account($update_account_form, $account_id) {
-		
+
+	public function update_account($update_account_form, $account_id, $is_ghost = false) {
+
 		$update_account_form['userSecondName'] = ( empty($update_account_form['userSecondName']) ) ? NULL : $update_account_form['userSecondName'];
 		$update_account_form['userSurname'] = ( empty($update_account_form['userSurname']) ) ? NULL : $update_account_form['userSurname'];
 		$update_account_form['userId'] = ( empty($update_account_form['userId']) ) ? NULL : $update_account_form['userId'];
@@ -71,55 +79,76 @@ class Account_model extends CI_Model {
 
         if ( isset($update_account_form['userGender']) )
             $this->db->set('gender', $update_account_form['userGender']);
-		
+
+		if ( isset($update_account_form['userPassword']) ){
+            $this->db->set('password', $update_account_form['userPassword']);
+		}
+
+		if ( $is_ghost ){
+            $this->db->set('is_ghost', 0);
+		}
+
 		$this->db->where('id', $account_id);
 		$this->db->update('account');
-		
+
 		if($this->db->affected_rows() > 0)
 			return true;
-		
+
 		return NULL;
-		
+
 	}
-	
-	public function get_account_by_email( $userEmail ) {
-		
-		$this->db->where('email', $userEmail);
-		
-		$query = $this->db->get('account');
-		
-		if($query->num_rows() > 0) {
-			$result = $query->row(); 
-			return $result; 
-		}
-		
-		return NULL;
-	}
-	
-	public function get_account_by_id($account_id) {
-		
-		$this->db->select('id, first_name, account_type_id, second_name, last_name, surname, identification_number, phone, mobile, gender, email, terms_and_conditions, points');
-		
+
+	public function update_suscription_status( $account_id, $new_status) {
+		$this->db->set('has_suscription', $new_status);
+
 		$this->db->where('id', $account_id);
-		
+		$this->db->update('account');
+
+		if($this->db->affected_rows() > 0)
+			return true;
+
+		return NULL;
+
+	}
+
+	public function get_account_by_email( $userEmail ) {
+
+		$this->db->where('email', $userEmail);
+
 		$query = $this->db->get('account');
-		
+
 		if($query->num_rows() > 0) {
 			$result = $query->row();
 			return $result;
 		}
-		
+
 		return NULL;
 	}
-	
-	public function get_pathologies_by_id( $account_id ) {
-		
-		$this->db->select('pathologies');
-		
-		$this->db->where( 'id', $account_id );
-		
+
+	public function get_account_by_id($account_id) {
+
+		$this->db->select('id, first_name, account_type_id, second_name, last_name, surname, identification_number, phone, mobile, gender, email, terms_and_conditions, points, has_suscription');
+
+		$this->db->where('id', $account_id);
+
 		$query = $this->db->get('account');
-		
+
+		if($query->num_rows() > 0) {
+			$result = $query->row();
+			return $result;
+		}
+
+		return NULL;
+	}
+
+	public function get_pathologies_by_id( $account_id ) {
+
+		$this->db->select('pathologies');
+
+		$this->db->where( 'id', $account_id );
+
+		$query = $this->db->get('account');
+
 		if($query->num_rows() == 1) {
 			$result = $query->row();
 			if( isset($result->pathologies) ){
@@ -128,22 +157,22 @@ class Account_model extends CI_Model {
 				return null;
 			}
 		}
-		
+
 		return NULL;
-		
+
 	}
-	
+
 	public function get_admin_account_by_id( $admin_id ) {
-		
+
 		$this->db->where('id', $admin_id);
-		
+
 		$query = $this->db->get('account');
-		
-		if ( $query->num_rows() == 1 ) 
+
+		if ( $query->num_rows() == 1 )
 			return $query->row();
-		else 
+		else
 			return NULL;
-		
+
 	}
 
     public function get_by_identification_number( $identification_number ) {
@@ -161,45 +190,45 @@ class Account_model extends CI_Model {
     }
 
 	public function get_admin_account_by_identification_number( $admin_id ) {
-	
+
 		$this->db->where('identification_number', $admin_id);
-	
+
 		$query = $this->db->get('account');
-	
+
 		if ( $query->num_rows() == 1 )
 			return $query->row();
 		else
 			return NULL;
-	
+
 	}
-	
+
 	public function update_fb_id( $account_id, $fb_id ) {
-		
+
 		$this->db->set('fb_id', $fb_id);
-		
+
 		$this->db->where('id', $account_id);
-		
+
 		$this->db->update('account');
-		
+
 		if($this->db->affected_rows() > 0)
 			return true;
-		
+
 		return false;
-		
+
 	}
-	
+
 	public function insert_fb_account( $fb_public_profile ) {
-		
+
 		$date_format = 'Y-m-d H:i:s'; //(the MySQL DATETIME format)
-		
+
 		$gender = NULL;
-		
+
 		if ($fb_public_profile->gender == 'female' )
 			$gender = 'F';
-		
+
 		if ($fb_public_profile->gender == 'male' )
 			$gender = 'M';
-		
+
 		$data = array(
 				'first_name' => $fb_public_profile->first_name,
 				'last_name' => $fb_public_profile->last_name,
@@ -210,16 +239,16 @@ class Account_model extends CI_Model {
 				'email' => $fb_public_profile->email,
 				'fb_id' => $fb_public_profile->id,
 		);
-		
+
 		$this->db->insert('account', $data);
-		
-		
+
+
 		if($this->db->affected_rows() > 0) {
 			return $this->db->insert_id();
 		}
-		
+
 		return NULL;
-		
+
 	}
 
     public function get_points ( $account_id ) {

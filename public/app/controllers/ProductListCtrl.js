@@ -33,6 +33,7 @@ farmapp.controller( 'ProductListCtrl', ['$scope' ,'$log' ,'$rootScope' ,'$cookie
                 $scope.shoppingcart.limitOrderValueInvalid = false;
                 $scope.shoppingcart.minimumOrderValueInvalid = false;
                 $scope.shoppingcart.hasDiscount = false;
+                $scope.shoppingcart.hasBono = false;
                 $scope.shoppingcart.sended = false;
 
                 var firtsProduct = _chargeProductObject(productId, name, PLU, barcode, categoryId, presentation, quantity, price, discount, tax);

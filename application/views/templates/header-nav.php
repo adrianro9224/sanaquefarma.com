@@ -1,5 +1,5 @@
 <header ng-controller="DevicesMenuAccordionCtrl">
-	
+
 	<div class="container-fluid">
         <div id="sticky-anchor"></div>
         <div class="row ng-cloak" id="search-nav" ng-cloak>
@@ -51,7 +51,7 @@
                                         <!--<i class="fa fa-cart-plus"></i>-->
                                     </a>
                                 </div>
-                        
+
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                     <ul class="nav navbar-nav">
@@ -64,12 +64,16 @@
                                                         <a href="<?//= "/product/show_products_by_category/" . lcfirst(str_replace(array(' '), '_', $category->name))?>"><?= $category->name?></a>
                                                     </li>
                                                     <li class="divider"></li>
-                                                <?php// endforeach;?> 
+                                                <?php// endforeach;?>
                                             </ul>
                                         </li> -->
                                         <li ng-controller="HoursOfOperationCtrl">
                                             <?php include_once( __ROOT__TEMPLATES__ . 'hours_of_operation_modal.php' )?>
                                             <a ng-click="open('sm')" title="Horario" >Horario de atención</a>
+                                        </li>
+										<li ng-controller="suscriptionCtrl">
+                                            <?php include_once( __ROOT__TEMPLATES__ . 'suscription.php' )?>
+                                            <a ng-click="open('md')" title="Horario" >¡Suscríbete y recibe $10.000!</a>
                                         </li>
                                         <!-- <li><a href="/contact" title="Comunícate con nosotros" >Contacto</a></li> -->
                                     </ul>

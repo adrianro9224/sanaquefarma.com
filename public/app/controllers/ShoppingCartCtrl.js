@@ -45,6 +45,12 @@ farmapp.controller('ShoppingCartCtrl', ['$scope' ,'$rootScope', '$log' ,'$cookie
                 auxSubtotal += $scope.shoppingcart.pointsDoDiscount;
             }
 
+            if ( $scope.shoppingcart.hasBono ) {
+                $scope.shoppingcart.subtotal -= $scope.shoppingcart.bonoDoDiscount;
+
+                auxSubtotal -= $scope.shoppingcart.bonoDoDiscount;
+            }
+
             var shippingCharge = getShippingCharge(auxSubtotal);
 
             console.info($scope.shoppingcart);
