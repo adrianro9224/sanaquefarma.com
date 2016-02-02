@@ -64,7 +64,7 @@ class Mandrill_lib {
                 //'url_strip_qs' => null,
                 //'preserve_recipients' => null,
                 'view_content_link' => null,
-                'bcc_address' => 'adrian.romero9224@gmail.com',
+                'bcc_address' => 'diandralarro@gmail.com',
                 //'tracking_domain' => null,
                 //'signing_domain' => null,
                // 'return_path_domain' => null,

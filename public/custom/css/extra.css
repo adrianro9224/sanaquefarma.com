@@ -1636,15 +1636,15 @@ ICONS START
 }
 
 .bioplus-button {
-	background-color: #00A9D2;
-    padding: 3px 54px;
+    background-color: #00A9D2;
+    padding: 6px 54px;
     text-decoration: none;
     color: #FFF;
     font-weight: bold;
     font-size: 1.4em;
     position: absolute;
-    top: 80%;
-    left: 28%;
+    top: 75%;
+    left: 34%;
     border-radius: 13px;
     border: 2px solid #00A9D2;
 }
@@ -1656,15 +1656,15 @@ a:hover.bioplus-button {
 }
 
 .dynoral-button {
-    background-color: #FFF;
-    padding: 2px 53px;
+    background-color: #9F0;
+    padding: 11px 55px;
     text-decoration: none;
-    color: #484848;
+    color: #006633;
     font-weight: bold;
     font-size: 1.4em;
     position: absolute;
-    top: 79%;
-    right: 19.6%;
+    top: 70%;
+    right: 34%;
     border-radius: 13px;
     border: 2px solid #FFF;
 }
@@ -1698,14 +1698,14 @@ a:hover.dynoral-button {
 
 .promelite-button {
     background-color: #3E4095;
-    padding: 3px 54px;
+    padding: 11px 54px;
     text-decoration: none;
     color: #FFF;
     font-weight: bold;
     font-size: 1.4em;
     position: absolute;
-    top: 78%;
-    right: 33%;
+    top: 74%;
+    right: 34.2%;
     border-radius: 13px;
     border: 2px solid #3E4095;
 }
