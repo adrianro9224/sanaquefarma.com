@@ -56,6 +56,7 @@
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                     <ul class="nav navbar-nav">
                                         <li class="active"><a title="Página de Inicio" href="/">Inicio<span class="sr-only">(current)</span></a></li>
+										<li class="active"><a title="Página de Inicio" href="/blog" target="_blank">Noticias de salud<span class="sr-only">(current)</span></a></li>
                                         <!-- <li class="dropdown">
                                             <a href="#" title="lista de categorías" class="dropdown-toggle" role="button" aria-expanded="false">Categorias <span class="caret"></span></a>
                                             <ul class="dropdown-menu" role="menu" id="categories-scroll">
