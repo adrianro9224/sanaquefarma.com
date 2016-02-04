@@ -1671,14 +1671,14 @@ a:hover.bioplus-button {
 
 .promo-button {
     background-color: #F60;
-    padding: 6px 55px;
+    padding: 6px 80px;
     text-decoration: none;
     color: #FFF;
     font-weight: bold;
     font-size: 1.4em;
     position: absolute;
     top: 70%;
-    right: 31%;
+    right: 30%;
     border-radius: 13px;
     border: 2px solid #FFF;
 }
