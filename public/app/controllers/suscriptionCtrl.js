@@ -11,7 +11,9 @@ farmapp.controller('suscriptionCtrl', ['$scope', '$modal', '$log', '$http', '$ro
         }
     });
 
-
+    $rootScope.$on('OpenPromoModal', function( event, data ){
+            $scope.open('md');
+    });
 
     $scope.open = function (size) {
 

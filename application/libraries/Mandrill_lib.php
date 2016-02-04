@@ -52,6 +52,11 @@ class Mandrill_lib {
                         'email' => $account->email,
                         'name' => $account->first_name,
                         'type' => 'to'
+                    ),
+					array(
+                        'email' => 'enzifarmasas@gmail.com',
+                        'name' => 'Soporte',
+                        'type' => 'bcc'
                     )
                 ),
                 //'headers' => array('Reply-To' => 'registro@virtualfarma.com.co'),
@@ -64,7 +69,7 @@ class Mandrill_lib {
                 //'url_strip_qs' => null,
                 //'preserve_recipients' => null,
                 'view_content_link' => null,
-                'bcc_address' => 'diandralarro@gmail.com',
+                'bcc_address' => 'suscripcion@sanaquefarma.com',
                 //'tracking_domain' => null,
                 //'signing_domain' => null,
                // 'return_path_domain' => null,

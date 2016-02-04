@@ -6,7 +6,7 @@ var farmapp = angular.module('farmapp', ['ui.bootstrap', 'ngCookies']);
 
     //Create the farmapp module
 
-farmapp.controller('CarouselCtrl', ['$scope', function($scope) {
+farmapp.controller('CarouselCtrl', ['$scope', '$rootScope', function( $scope, $rootScope ) {
     $scope.myInterval = 7500;
     var slides = $scope.slides = [];
     $scope.addSlide = function(i) {
@@ -15,16 +15,21 @@ farmapp.controller('CarouselCtrl', ['$scope', function($scope) {
                 format = '.png';*/
         slides.push({
             image: 'http://sanaquefarma.com/assets/images/slides/' + i + format,
-            button: ['http://sanaquefarma.com/l/dynoral','http://sanaquefarma.com/l/bioplus','http://sanaquefarma.com/l/promelite'][slides.length % 3],
-            class : ['dynoral-button', 'bioplus-button', 'promelite-button'][slides.length % 3],
-            text : ['Ver más', 'Ver más', 'Ver más'][slides.length % 3]
+            button: ['', 'http://sanaquefarma.com/l/dynoral','http://sanaquefarma.com/l/bioplus','http://sanaquefarma.com/l/promelite'][slides.length % 4],
+            class : ['promo-button', 'dynoral-button', 'bioplus-button', 'promelite-button'][slides.length % 4],
+            text : ['Recíbelos ya', 'Ver más', 'Ver más', 'Ver más'][slides.length % 4],
+            hasFunction : [true,false,false,false][slides.length % 4]
         });
     };
-    for (var i=0; i<=2; i++) {
+    for (var i=0; i<=3; i++) {
 
         //if ( i != 2 )
             $scope.addSlide(i);
 
+    }
+
+    $scope.openPromoModal = function() {
+        $rootScope.$emit('OpenPromoModal', true);
     }
 
 }]);

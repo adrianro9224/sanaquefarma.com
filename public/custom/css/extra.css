@@ -1669,6 +1669,27 @@ a:hover.bioplus-button {
     border: 2px solid #FFF;
 }
 
+.promo-button {
+    background-color: #F60;
+    padding: 6px 55px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.4em;
+    position: absolute;
+    top: 70%;
+    right: 31%;
+    border-radius: 13px;
+    border: 2px solid #FFF;
+}
+
+a:hover.promo-button {
+    text-decoration: none;
+    border: 2px solid #F60;
+    background-color: #FFF;
+    color: #F60;
+}
+
 .register-slide-button {
     background-color: #D7FE00;
     padding: 0px 51px;
