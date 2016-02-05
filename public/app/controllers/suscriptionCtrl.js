@@ -1,11 +1,12 @@
-farmapp.controller('suscriptionCtrl', ['$scope', '$modal', '$log', '$http', '$rootScope', function( $scope, $modal, $log, $http, $rootScope ){
+farmapp.controller('suscriptionCtrl', ['$scope', '$modal', '$log', '$http', '$rootScope', '$location', function( $scope, $modal, $log, $http, $rootScope, $location ){
 
     $scope.items = [false, false];
 
     $scope.animationsEnabled = true;
 
     angular.element(document).ready(function(){
-        var currentUrl = window.location.href;
+        var currentUrl = $location.absUrl();
+        console.log(currentUrl);
         if ( currentUrl == "http://sanaquefarma.com/" ){
             $scope.open('md');
         }
